@@ -14,6 +14,6 @@ The goal of this repository is to consolidate theoretical knowledge with practic
 
 # weekly documentation
 
-'''
+```
 week 1
-'''
+```
