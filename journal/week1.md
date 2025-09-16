@@ -27,10 +27,10 @@ week 1
 
 ## Task
 
-1. Find out about ip class ranges (Private IPs) and Public IPs.
+### 1. Find out about ip class ranges (Private IPs) and Public IPs.
    # IP Address Basics
 
-### Private IPs
+#### Private IPs
 - Used inside **local networks (LAN/WiFi)**  
 - Not visible on the Internet  
 - Ranges:  
@@ -38,19 +38,21 @@ week 1
   - 172.16.0.0 – 172.31.255.255  
   - 192.168.0.0 – 192.168.255.255  
 
-### Public IPs
+#### Public IPs
 - Given by **ISP**  
 - Used to identify you on the **Internet**  
 - Example: 103.54.xx.xx  
 
-### Easy Example
+#### Easy Example
 - **Private IP** = Room number inside a house 🏠  
-- **Public IP** = Full house address 📬  
+- **Public IP** = Full house address 📬
 
-2. Explain Class A, Class B, Class C of Private IP ranges. Provide examples for each.
+  
+
+### 2. Explain Class A, Class B, Class C of Private IP ranges. Provide examples for each.
 # Private IP Address Classes
 
-### Class A
+#### Class A
 - **Range:** 10.0.0.0 – 10.255.255.255  
 - **Subnet Mask:** 255.0.0.0  
 - **Hosts per Network:** ~16 million  
@@ -58,7 +60,7 @@ week 1
 
 ---
 
-### Class B
+#### Class B
 - **Range:** 172.16.0.0 – 172.31.255.255  
 - **Subnet Mask:** 255.255.0.0  
 - **Hosts per Network:** ~65,000  
@@ -66,7 +68,7 @@ week 1
 
 ---
 
-### Class C
+#### Class C
 - **Range:** 192.168.0.0 – 192.168.255.255  
 - **Subnet Mask:** 255.255.255.0  
 - **Hosts per Network:** 254  
