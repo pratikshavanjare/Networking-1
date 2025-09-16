@@ -27,7 +27,7 @@ week 1
 
 ## Task
 
-1. Find out about ip class ranges (Private IPs) and Public IPs
+1. Find out about ip class ranges (Private IPs) and Public IPs.
    # IP Address Basics
 
 ### Private IPs
