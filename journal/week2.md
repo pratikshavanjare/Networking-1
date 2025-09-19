@@ -34,4 +34,28 @@ It divides the communication system into **7 layers**, where each layer performs
 
 7. **Application Layer**  
    - Closest to the user. Provides services like **email, web browsing, file transfer**.  
-   - Example: HTTP, FTP, SMTP, DNS.  
+   - Example: HTTP, FTP, SMTP, DNS.
+  
+   # 🌐 OSI Model in Real-Life Examples  
+
+## 1. WhatsApp  
+- **Messages** → TCP (reliable delivery)  
+- **Calls** → UDP (fast, real-time)  
+- **Encryption** → Signal Protocol  
+
+---
+
+## 2. Web Browsing (HTTP/HTTPS)  
+- **Application Layer** → Browser (Chrome, Edge, etc.)  
+- **Transport Layer** → TCP (port 80 = HTTP, port 443 = HTTPS)  
+- **Network Layer** → IP address routing  
+- **Data Link + Physical Layer** → Wi-Fi/Ethernet signals  
+
+---
+
+## 3. YouTube  
+- **Application Layer** → YouTube app/website (HTTPS)  
+- **Transport Layer** → TCP (video reliability) + UDP (faster streaming)  
+- **Presentation Layer** → Video/audio compression & encryption  
+- **Physical Layer** → Data via Wi-Fi/4G/5G  
+ 
