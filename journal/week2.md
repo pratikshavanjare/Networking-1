@@ -39,24 +39,15 @@ It divides the communication system into **7 layers**, where each layer performs
    # 🌐 OSI Model in Real-Life Examples  
 
 ## 1. WhatsApp  
-- **Application Layer** → WhatsApp app (chat, calls, media sharing)  
-- **Presentation Layer** → End-to-end encryption (Signal Protocol)  
-- **Session Layer** → Maintains connection between user and WhatsApp server  
-- **Transport Layer** →  
+- **Application Layer** → WhatsApp app (chat, calls, media sharing)  (XMPP protocol is used)
+- **Presentation Layer** → Translation, End-to-end encryption (Signal Protocol), Data Compression
+- **Session Layer** → Maintains connection between user and WhatsApp server , Session management, authentication, authorization 
+- **Transport Layer** →  segmentation, flow control, error control
   - TCP → Messages, media (reliable)  
   - UDP → Voice & video calls (fast)  
-- **Network Layer** → IP addresses used to send data across the internet  
-- **Data Link Layer** → Uses Wi-Fi or mobile network (MAC addresses)  
-- **Physical Layer** → Actual signals via Wi-Fi/4G/5G/mobile towers  
+- **Network Layer** → IP addresses used to send data across the internet, logical addressing routing, path determination
+- **Data Link Layer** → Uses Wi-Fi or mobile network (MAC addresses)  , Framing, addressing
+- **Physical Layer** → Actual signals via Wi-Fi/4G/5G/mobile towers  (it converts into bit signal)
 
 ---
 
-## 2. Web Browsing (HTTP/HTTPS)  
- - **Application Layer** → Browser uses HTTP/HTTPS to access websites  
-- **Presentation Layer** → Data encryption (SSL/TLS) + format (HTML, CSS, JS)  
-- **Session Layer** → Maintains session (cookies, login state)  
-- **Transport Layer** → TCP (port 80 = HTTP, port 443 = HTTPS)  
-- **Network Layer** → IP addresses route data between client and server  
-- **Data Link Layer** → Frames sent via Wi-Fi or Ethernet (MAC address)  
-- **Physical Layer** → Actual signals (radio waves, cables, fiber optics) 
----
