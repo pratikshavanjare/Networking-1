@@ -1,7 +1,7 @@
 
-# Networking Internship - 3 Months
+# Networking Internship
 
-This repository is a week-by-week documentation of my Networking Internship journey (3 months). It includes:
+This repository is a week-by-week documentation of my Networking Internship journey. It includes:
 
 Key concepts learned each week
 
