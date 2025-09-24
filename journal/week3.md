@@ -1,13 +1,13 @@
 # Switches, L2, and L3 Explained
 
-## 🔹 What is a Switch?
+##  What is a Switch?
 A **network switch** is a device that connects multiple computers, servers, or devices within the same network (like a LAN).  
 - It forwards data (frames/packets) only to the specific device it’s meant for, not to all devices.  
 - This makes communication faster and more secure than using a hub.  
 
 ---
 
-## 🔹 Layer 2 (L2) Switch
+##  Layer 2 (L2) Switch
 - Works on **Data Link Layer** of the OSI model.  
 - Uses **MAC addresses** to forward data.  
 - Mainly used in **Local Area Networks (LANs)**.  
@@ -18,7 +18,7 @@ A **network switch** is a device that connects multiple computers, servers, or d
 
 ---
 
-## 🔹 Layer 3 (L3) Switch
+##  Layer 3 (L3) Switch
 - Works on **Network Layer** of the OSI model.  
 - Uses **IP addresses** for forwarding data.  
 - Can do **routing** between different networks (like a router).  
@@ -29,7 +29,7 @@ A **network switch** is a device that connects multiple computers, servers, or d
 
 ---
 
-## ⚡ Quick Comparison
+## Comparison between L2 & L3
 
 | Feature            | L2 Switch (Data Link) | L3 Switch (Network) |
 |---------------------|-----------------------|----------------------|
@@ -41,6 +41,5 @@ A **network switch** is a device that connects multiple computers, servers, or d
 
 ---
 
-## 🔎 Simple Diagram
 
 
