@@ -106,5 +106,3 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 
 ---
 
-(OSI Model - 7 Layers Expalined | Claude | Claude)
-(TCP/IP Model - Complete Overview | Claude | Claude)
