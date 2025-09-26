@@ -42,4 +42,39 @@ A **network switch** is a device that connects multiple computers, servers, or d
 ---
 
 
+# VLAN and Trunk
+
+## VLAN (Virtual Local Area Network)
+- VLAN is a **logical network** created within a physical network.
+- It allows devices to be grouped together even if they are not on the same physical switch.
+- Each VLAN has its own **broadcast domain**, which improves security and reduces unnecessary traffic.
+
+### Example:
+- VLAN 10 → HR Department  
+- VLAN 20 → IT Department  
+- VLAN 30 → Finance Department  
+
+Devices in VLAN 10 cannot directly communicate with VLAN 20 unless routing is configured.
+
+---
+
+## Trunk
+- A **Trunk** is a link between switches that carries traffic of **multiple VLANs**.
+- It uses **tagging (IEEE 802.1Q)** to identify which VLAN the traffic belongs to.
+- Trunks are used to allow VLAN information to travel across different switches.
+
+### Example:
+- Switch A (VLAN 10, VLAN 20) ↔ **Trunk Link** ↔ Switch B (VLAN 10, VLAN 20)  
+- The trunk link carries both VLANs' traffic between the switches.
+
+---
+
+## Key Difference
+| Feature         | VLAN                                   | Trunk                                    |
+|-----------------|----------------------------------------|------------------------------------------|
+| Definition      | Logical segmentation of a network       | Link that carries multiple VLANs         |
+| Scope           | Works within a single switch            | Connects multiple switches               |
+| Broadcast Domain| Separate for each VLAN                  | Can carry multiple VLANs across switches |
+| Example         | VLAN 10 = HR, VLAN 20 = IT              | Trunk link between Switch A and Switch B |
+
 
