@@ -78,3 +78,69 @@ Devices in VLAN 10 cannot directly communicate with VLAN 20 unless routing is co
 | Example         | VLAN 10 = HR, VLAN 20 = IT              | Trunk link between Switch A and Switch B |
 
 
+
+# Spanning Tree--
+
+# Spanning Tree Protocol (STP) — Simple & Short
+
+## What is Spanning Tree Protocol?
+
+STP (IEEE 802.1D) prevents **switching loops** in Ethernet networks by creating a single active path between switches and blocking redundant links. It ensures a loop-free Layer 2 topology.
+
+## Key STP concepts
+
+* **Root Bridge**: The central reference switch (lowest bridge ID).
+* **Bridge ID (BID)**: Combination of priority + MAC address used to elect the root.
+* **Root Port (RP)**: On non-root switches, the port with the best path to the Root Bridge.
+* **Designated Port (DP)**: The port on a network segment chosen to forward frames to that segment.
+* **Blocked Port**: Port that does not forward frames (prevents loops).
+* **Path Cost**: Metric based on link speed used to choose best paths.
+* **Port States**: (Legacy) Blocking, Listening, Learning, Forwarding (RSTP shortens these).
+
+## How STP works (short steps)
+
+1. **Election**: All switches exchange BPDUs. Lowest Bridge ID becomes the Root Bridge.
+2. **Root Port selection**: Each non-root switch selects one Root Port (lowest path cost to root).
+3. **Designated Port selection**: For each LAN segment, the switch with lowest path cost to root becomes the Designated Bridge; its port is the Designated Port.
+4. **Blocking**: Any other ports that would create loops are put into a Blocking state.
+5. **Convergence**: After timers, ports move to Forwarding or remain Blocked; traffic flows without loops.
+
+> Note: **RSTP (802.1w)** is faster and commonly used today; it keeps the same core ideas but converges quicker.
+
+## Real examples (simple topologies)
+
+* **Triangle of 3 switches (A—B—C with extra link A—C)**
+
+  * Root elected (lowest BID), other switches pick root ports. One of the triangle links will be blocked to avoid a loop.
+* **Access switch with two uplinks to distribution switches**
+
+  * One uplink forwards, the other is blocked; if the active uplink fails, STP unblocks the backup link.
+
+### Example Cisco-ish commands 
+
+```
+show spanning-tree            # view STP status and topology
+show spanning-tree root       # show root bridge info
+show spanning-tree brief      # quick port states
+spanning-tree vlan 1 priority 4096   # lower priority to make this switch root
+```
+
+## Common troubleshooting (short fixes)
+
+* **Symptom: Broadcast storms / loops**
+
+  * Check for multiple active links that should be blocked. Use `show spanning-tree`.
+* **Symptom: Slow convergence after link fail**
+
+  * Use RSTP (rapid) or tune timers; enable uplink fast/portfast on access ports if appropriate.
+* **Symptom: Wrong root bridge (not desired switch)**
+
+  * Change bridge priority on preferred root (`spanning-tree priority`), or adjust MAC tiebreakers.
+* **Symptom: Port stays blocking unexpectedly**
+
+  * Verify BPDU reception on that port, check port cost and link speed, ensure no STP mode mismatch.
+
+
+---
+
+
