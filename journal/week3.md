@@ -79,9 +79,7 @@ Devices in VLAN 10 cannot directly communicate with VLAN 20 unless routing is co
 
 
 
-# Spanning Tree--
-
-# Spanning Tree Protocol (STP) — Simple & Short
+# Spanning Tree Protocol (STP)
 
 ## What is Spanning Tree Protocol?
 
