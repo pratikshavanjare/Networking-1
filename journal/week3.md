@@ -141,4 +141,7 @@ spanning-tree vlan 1 priority 4096   # lower priority to make this switch root
 
 ---
 
+## For reference --
+
+(https://claude.ai/public/artifacts/83161f5d-1c14-4ed0-8720-8f0c4d1c951b)
 
