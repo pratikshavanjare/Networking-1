@@ -47,3 +47,48 @@ Routing is the process of selecting the best path for data to travel from source
 5. Use debug commands (`debug ip routing`) carefully to see updates.  
 
 ---
+
+
+
+# Interdomain & Intradomain Routing  
+**Routing** is the process of selecting the best path for data packets to travel across networks.
+
+## 🧭 Types of Routing
+### 1. Intradomain Routing
+- Used **within a single organization or autonomous system (AS)**.  
+- Focuses on efficient routing inside the network.  
+- Examples: **RIP, OSPF, EIGRP**
+
+### 2. Interdomain Routing
+- Used **between different organizations or autonomous systems**.  
+- Focuses on routing between multiple networks on the Internet.  
+- Example: **BGP (Border Gateway Protocol)**
+
+---
+
+## 🛰️ RIP - Routing Information Protocol
+- **Type:** Distance-vector routing protocol  
+- **Metric Used:** Hop count (max 15 hops)  
+- **Updates:** Sent every 30 seconds  
+- **Algorithm:** Bellman-Ford  
+- **Versions:** RIP v1 (Classful), RIP v2 (Classless, supports subnet mask)  
+- **Limitation:** Not suitable for large networks due to hop limit  
+
+### 🧩 Troubleshooting Tips
+- Check network connectivity (`ping`, `tracert`)  
+- Verify RIP configuration (correct network statements)  
+- Ensure no route loops exist  
+- Use `show ip route` and `debug ip rip` (in Cisco devices) for diagnosis  
+
+---
+
+### 💡 Example Scenario
+- **Intradomain:** RIP or OSPF used within a company’s LANs.  
+- **Interdomain:** BGP used to connect the company network to an ISP.  
+
+
+
+## For refernce --
+
+(https://claude.ai/public/artifacts/1921e117-1ea7-41d9-aefb-c5beb03b1c6b)
+(https://claude.ai/public/artifacts/a28f54e1-e72b-4bdd-af38-6201ec24618a)
