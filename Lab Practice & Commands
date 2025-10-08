@@ -1,2 +1,31 @@
-hi
+# vlan creating in single switch --
 
+## Step 1: Enter Switch Configuration Mode
+
+enable
+configure terminal
+
+## Step 2: Create VLANs
+
+vlan 10
+name Sales
+exit
+
+vlan 20
+name Marketing
+exit
+
+## Step 3: Assign VLAN to Ports
+
+interface FastEthernet 0/1
+switchport mode access
+switchport access vlan 10
+exit
+
+interface FastEthernet 0/2
+switchport mode access
+switchport access vlan 20
+exit
+
+## Step 4: Verify VLANs
+show vlan brief
