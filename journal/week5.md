@@ -46,3 +46,44 @@ Used in large enterprise networks or ISPs to efficiently route data between rout
 
 ---
 
+# EIGRP (Enhanced Interior Gateway Routing Protocol)
+
+## 1. What is EIGRP?
+EIGRP is an **advanced distance-vector routing protocol** developed by Cisco.  
+It combines **distance-vector and link-state features** (hybrid protocol).  
+It is used for **routing within an autonomous system (AS)**.
+
+---
+
+## 2. Characteristics of EIGRP
+- **Protocol Type:** Advanced Distance Vector (Hybrid)
+- **Metric:** Bandwidth, Delay, Load, Reliability
+- **Algorithm:** Uses **DUAL (Diffusing Update Algorithm)** for fast convergence
+- **Supports:** IPv4 and IPv6, VLSM/CIDR
+- **Neighbor Discovery:** Uses **Hello packets**
+- **Routing Updates:** Only when topology changes (partial updates)
+- **Authentication:** Supports MD5 authentication
+
+---
+
+## 3. How EIGRP Works
+1. Routers send **Hello packets** to discover neighbors.
+2. Builds **Neighbor Table** for directly connected routers.
+3. Exchanges **Topology Table** information.
+4. Uses **DUAL algorithm** to calculate the **best path** to each network.
+5. Updates **Routing Table** with best paths.
+6. Sends **partial updates** when network changes occur.
+
+---
+
+## 4. EIGRP Packet Types
+| Packet Type         | Purpose |
+|--------------------|---------|
+| **Hello**           | Discover and maintain neighbors |
+| **Update**          | Share routing information |
+| **Query**           | Ask neighbors for a route when needed |
+| **Reply**           | Response to Query |
+| **Acknowledgment**  | Confirms receipt of Update, Query, or Reply |
+
+---
+
