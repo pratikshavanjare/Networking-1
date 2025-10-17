@@ -9,15 +9,15 @@ DHCP contents Table which has DUAL nature -
 Dual nature in the sense It has static and Dynamic both, They are as below 
 | Device Name | IP Address   |
 |--------------|--------------|
-| Laptop     | 192.168.1.1  |      } Static 
-| Mobile    | 192.168.1.2  | 
-| PC    | 192.168.1.10 | 
+| Laptop     | 10.0.0.1  |      } Static 
+| Mobile    | 10.0.0.2  | 
+| PC    | 10.0.0.3 | 
 
 | Device Name | IP Address   | Lease Time   |
 |--------------|--------------|-------------|
-| Laptop     | 192.168.1.1  | 10 min     |      } Dynamic 
-| Mobile    | 192.168.1.2  | 20 min |
-| PC         | 192.168.1.10 | 5 min    |
+| Laptop     | 10.0.0.1  | 10 min     |      } Dynamic 
+| Mobile    | 10.0.0.2  | 20 min |
+| PC         | 10.0.0.3 | 5 min    |
 
 So, here in static if host will ask IP Address we configure to it but in dynamic it will only assigns IP when host will send request to the pool(A pool is a collection of all available IP addresses that can be assigned to devices in a network)so it can give to the particular host otherwise it will not. 
 
