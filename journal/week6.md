@@ -2,6 +2,7 @@
 
 ## What is DHCP Protocol?
 Let's learn with example, Suppose there is one network in our Host and we want to share our date to that host or that host wants to send data somewhere, if network is small and number of host is only one so we can configure IP Address manually but what if large networks and number of hosts will be increases we can't do it manually, So here DHCP Protocol comes -
+
            "It stands for Dynamic Host Configuration protocol. It is used to configure IP Addresses dynamically to the hosts or devices with lease time."
 This protocol matters a lot because it automates IP address assignment process, reduces admins overhead etc.
 
