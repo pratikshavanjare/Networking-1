@@ -1,7 +1,7 @@
 # DHCP Protocol 
 
 ## What is DHCP Protocol?
-Let's learn with example, Suppose there is one network in our Host and we want to share our date to that host or that host wants to send data somewhere, if network is small and number of host is only one so we can configure IP Address manually but what if large networks and number of hosts will be increases we can't do it manually, So here DHCP Protocol comes -
+Let's learn with example, Suppose there is one network in our Host and we want to share our data to that host or that host wants to send data somewhere, if network is small and number of host is only one so we can configure IP Address manually but what if large networks and number of hosts will be increases we can't do it manually, So here DHCP Protocol comes -
            "It stands for Dynamic Host Configuration protocol. It is used to configure IP Addresses dynamically to the hosts or devices with lease time."
 This protocol matters a lot because it automates IP address assignment process, reduces admins overhead etc.
 
@@ -60,3 +60,19 @@ BENEFITS - It is efficient to reuse and flexible for mobile devices.
 
 ## NTP Protocol
 NTP stands for Network Time Protocol. It is used for accurate time or make sure all computers and devices on a network have the same correct time.
+
+
+## NAT & PAT
+
+### What is NAT?
+NAT is stands for Network Address Tranlation, It translates IP Address from public IP to private IP or private IP to public IP.
+let's understand with example, Suppose we are working in a company and wants to access some data from server which is belongs to outside so the request will go in the form of data packets which has its own IP address, as company has its own router so here NAT comesit will change private IP to public IP and after getting information form server it will come again to router and will change public IP to private IP.
+
+And the purpose of NAT is to allows multiple devices on a private network to share single public IP address, it uses IPV4, provides security by hiding internal IP address.
+
+### Types of NAT
+There are 3 types of NAT suh as -
+1. Static NAT - 
+2. Dynamic NAT - 
+3. PAT(Port Address Translation) - 
+
