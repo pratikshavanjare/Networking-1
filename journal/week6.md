@@ -57,7 +57,7 @@ LEASE RENEWAL PROCESS-
 
 BENEFITS - It is efficient to reuse and flexible for mobile devices.
 
-#### DHCP Lab Image(https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
+#### DHCP Lab Image (https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
 #### Reference [Day 13](https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c)
 
 
@@ -76,7 +76,7 @@ The working is done by 3 steps, they are below -
 3. And then that computer adjusts its clock as on that time.
 
 #### NTP Image (https://github.com/pratikshavanjare/Networking-1/blob/e3e69d028d768c589d70ae11172e018cd2f72d73/Media/NTP%20Image.png)
-
+------------
 ## 3 Way Handshake Protocol
 
 It is mainly used in TCP(Transmission Control Protocol) to establish a connection between two devices (like Laptop, Computer etc).
@@ -89,18 +89,31 @@ It is mainly used in TCP(Transmission Control Protocol) to establish a connectio
 After these 2 steps connection will established and th devices will start communticating or can sent data safely.
 
 #### 3 way Handshake Image (https://github.com/pratikshavanjare/Networking-1/blob/d5c264eb3e5f6d03cb930886cdffffa2809c887c/Media/3wayhandshake.png)
+-----------------
 
 ## NAT & PAT
 
 ### What is NAT?
 NAT is stands for Network Address Tranlation, It translates IP Address from public IP to private IP or private IP to public IP.
-let's understand with example, Suppose we are working in a company and wants to access some data from server which is belongs to outside so the request will go in the form of data packets which has its own IP address, as company has its own router so here NAT comesit will change private IP to public IP and after getting information form server it will come again to router and will change public IP to private IP.
+let's understand with example, Suppose we are working in a company and wants to access some data from server which is belongs to outside so the request will go in the form of data packets which has its own IP address, as company has its own router so here NAT comes it will change private IP to public IP and after getting information form server it will come again to router and will change public IP to private IP.
 
 And the purpose of NAT is to allows multiple devices on a private network to share single public IP address, it uses IPV4, provides security by hiding internal IP address.
 
 ### Types of NAT
 There are 3 types of NAT suh as -
-1. Static NAT - 
-2. Dynamic NAT - 
-3. PAT(Port Address Translation) - 
+1. Static NAT - one-to-one maping between private & public ip addresses means maps one private IP to one public IP permanently.
+2. Dynamic NAT - Maps a private IP to any available public IP from a pool.
+3. PAT(Port Address Translation) - It maps multiple private ip addresses to single public ip using port numbers.
 
+### What is PAT?
+PAT is stands for Port Address Translation. It is the advance version of NAT that allows many devices to share a single public IP address by using different pport numbers to identify each connection.
+Benifits of PAT are it allows many devices for sharing one public IP address, cost effective & stand implementation in routers.
+
+## Use Cases in Corporate Networks
+
+1. Internet Access for Employees - PAT allows a lot of employees to access internet using pool of IP addresses.
+2. Server Publishing - Internal servers are accessible from the internet while keeping them on the internal network.
+3. Security Enhancement - It is unable to hack by attakers dut to hiding internal IP addressed.
+4. Cloud Service Access - By using NAT, Organizations provide controlled access to cloud resources while maintaining internal network segmentation.
+5. Testing & Developemnt - They canuse to simulate production networks with different addressing schemes.
+   
