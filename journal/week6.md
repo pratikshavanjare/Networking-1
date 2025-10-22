@@ -75,7 +75,7 @@ The working is done by 3 steps, they are below -
 2. The server will reply with the correct time.
 3. And then that computer adjusts its clock as on that time.
 
-#### NTP Image(https://github.com/pratikshavanjare/Networking-1/blob/e3e69d028d768c589d70ae11172e018cd2f72d73/Media/NTP%20Image.png)
+#### NTP Image (https://github.com/pratikshavanjare/Networking-1/blob/e3e69d028d768c589d70ae11172e018cd2f72d73/Media/NTP%20Image.png)
 
 ## 3 Way Handshake Protocol
 
@@ -88,6 +88,7 @@ It is mainly used in TCP(Transmission Control Protocol) to establish a connectio
 3. ACK - then Client confirms - "Great, let's start communicating!".
 After these 2 steps connection will established and th devices will start communticating or can sent data safely.
 
+#### 3 way Handshake Image (https://github.com/pratikshavanjare/Networking-1/blob/d5c264eb3e5f6d03cb930886cdffffa2809c887c/Media/3wayhandshake.png)
 
 ## NAT & PAT
 
