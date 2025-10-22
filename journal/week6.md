@@ -57,9 +57,8 @@ LEASE RENEWAL PROCESS-
 
 BENEFITS - It is efficient to reuse and flexible for mobile devices.
 
-### DHCP Lab Image(https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
-
-### Reference [Day 13](https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c)
+#### DHCP Lab Image(https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
+#### Reference [Day 13](https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c)
 
 
 -----------
