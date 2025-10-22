@@ -56,6 +56,9 @@ LEASE RENEWAL PROCESS-
 3. Lease Expiration - When the lease time completely runs out and if client didn't renew, it will stop using that IP and request a new one from DHCP server.
 
 BENEFITS - It is efficient to reuse and flexible for mobile devices.
+
+![Alt text]([image_url](https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png))
+
 -----------
 
 ## NTP Protocol
