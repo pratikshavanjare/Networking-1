@@ -56,7 +56,7 @@ LEASE RENEWAL PROCESS-
 3. Lease Expiration - When the lease time completely runs out and if client didn't renew, it will stop using that IP and request a new one from DHCP server.
 
 BENEFITS - It is efficient to reuse and flexible for mobile devices.
-
+-----------
 
 ## NTP Protocol
 NTP stands for Network Time Protocol. It is used for accurate time or make sure all computers and devices on a network have the same correct time.
