@@ -75,8 +75,7 @@ The working is done by 3 steps, they are below -
 2. The server will reply with the correct time.
 3. And then that computer adjusts its clock as on that time.
 
-#### NTP Image(https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
-
+#### NTP Image(https://github.com/pratikshavanjare/Networking-1/blob/e3e69d028d768c589d70ae11172e018cd2f72d73/Media/NTP%20Image.png)
 
 ## 3 Way Handshake Protocol
 
