@@ -63,8 +63,31 @@ BENEFITS - It is efficient to reuse and flexible for mobile devices.
 
 -----------
 
+###(Advance Tpoics)
+
 ## NTP Protocol
 NTP stands for Network Time Protocol. It is used for accurate time or make sure all computers and devices on a network have the same correct time.
+Its is essential because it makes sure secure coonections (like HTTPS/FTP etc) work properly, it keeps device's time accurate.
+
+### How it works??
+The working is done by 3 steps, they are below -
+1. The PC will ask to the time server - "What's the time"?
+2. The server will reply with the correct time.
+3. And then that computer adjusts its clock as on that time.
+
+#### NTP Image(https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
+
+
+## 3 Way Handshake Protocol
+
+It is mainly used in TCP(Transmission Control Protocol) to establish a connection between two devices (like Laptop, Computer etc).
+
+#### This process will done in 3 steps that is-
+
+1. SYN - Client says - "Hello, I want to establish a connection".
+2. SYN-ACK - then Server replies - " Okay, let's start".
+3. ACK - then Client confirms - "Great, let's start communicating!".
+After these 2 steps connection will established and th devices will start communticating or can sent data safely.
 
 
 ## NAT & PAT
