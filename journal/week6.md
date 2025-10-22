@@ -57,7 +57,7 @@ LEASE RENEWAL PROCESS-
 
 BENEFITS - It is efficient to reuse and flexible for mobile devices.
 
-#### DHCP Lab Image (https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
+#### DHCP Lab [Image](https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
 #### Reference [Day 13](https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c)
 
 
@@ -75,7 +75,7 @@ The working is done by 3 steps, they are below -
 2. The server will reply with the correct time.
 3. And then that computer adjusts its clock as on that time.
 
-#### [NTP Image](https://github.com/pratikshavanjare/Networking-1/blob/e3e69d028d768c589d70ae11172e018cd2f72d73/Media/NTP%20Image.png)
+#### NTP [Image](https://github.com/pratikshavanjare/Networking-1/blob/e3e69d028d768c589d70ae11172e018cd2f72d73/Media/NTP%20Image.png)
 ------------
 ## 3 Way Handshake Protocol
 
@@ -88,7 +88,7 @@ It is mainly used in TCP(Transmission Control Protocol) to establish a connectio
 3. ACK - then Client confirms - "Great, let's start communicating!".
 After these 2 steps connection will established and th devices will start communticating or can sent data safely.
 
-#### [3 way Handshake Image](https://github.com/pratikshavanjare/Networking-1/blob/d5c264eb3e5f6d03cb930886cdffffa2809c887c/Media/3wayhandshake.png)
+#### 3 way Handshake [Image](https://github.com/pratikshavanjare/Networking-1/blob/d5c264eb3e5f6d03cb930886cdffffa2809c887c/Media/3wayhandshake.png)
 -----------------
 
 ## NAT & PAT
@@ -117,5 +117,5 @@ Benifits of PAT are it allows many devices for sharing one public IP address, co
 4. Cloud Service Access - By using NAT, Organizations provide controlled access to cloud resources while maintaining internal network segmentation.
 5. Testing & Developemnt - They canuse to simulate production networks with different addressing schemes.
    
-#### NAT-PAT Image (https://github.com/pratikshavanjare/Networking-1/blob/cf507db41f7a88f30f5c7480aaa046deac9bd80e/Media/NAT-PAT.png)
+#### NAT-PAT [Image](https://github.com/pratikshavanjare/Networking-1/blob/cf507db41f7a88f30f5c7480aaa046deac9bd80e/Media/NAT-PAT.png)
 #### Reference [Day 14](https://claude.ai/public/artifacts/553de791-6828-4740-becf-0fb4af7e53b7)
