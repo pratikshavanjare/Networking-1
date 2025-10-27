@@ -16,7 +16,7 @@ This will complete in 5 steps that are below -
 5. Implicit Deny All - If no rule matches, the packet is automatically denied.
 
  **Key Point:**  
-ACLs are applied to a router’s **interface**, either **inbound (in)** or **outbound (out)** direction.
+ACLs are applied to a router’s **interface**, either **inbound** or **outbound** direction.
 
 ---
 
