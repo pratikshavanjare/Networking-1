@@ -48,7 +48,7 @@ It will do the same thing controlling network traffic but more precisely. It wil
 
 #### Reference [Day 15](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823)
 
-
+----------------
 
 ## LAN Switching
 
@@ -99,6 +99,7 @@ Switches can forward frames in different ways:
 ---
 #### Reference [Day 16](https://claude.ai/public/artifacts/c07e6c2a-f9ae-4abd-a263-adb67b666bc9)
 
+-------------------------
 
 ##  WAN Technologies
 
