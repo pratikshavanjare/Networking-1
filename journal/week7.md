@@ -97,4 +97,76 @@ Switches can forward frames in different ways:
 | **Fragment-Free** | A balance between both — it checks the first 64 bytes for errors before forwarding. |
 
 ---
-#### Reference [Day 16](https://claude.ai/public/artifacts/c07e6c2a-f9ae-4abd-a263-adb67b666bc9))
+#### Reference [Day 16](https://claude.ai/public/artifacts/c07e6c2a-f9ae-4abd-a263-adb67b666bc9)
+
+
+##  WAN Technologies
+
+###  What is WAN?
+WAN is stands for Wide Area Network . It is a type ofnetwork that connects devices in large geographical areas like - cities,states, coutries or continents. 
+Example - The Internet itself is the largest WAN.
+
+---
+##### Let's see some common wan technologies --
+
+- **MPLS (Multiprotocol Label Switching)**
+- **Leased Lines**
+- **Broadband (DSL, Fiber, 4G/5G, etc.)**
+
+
+###  MPLS (Multiprotocol Label Switching)
+
+**What is MPLS?**  
+MPLS is stands for Multiprotocol Label Switching . It is a routing techniques that directs data from one node to another using labels instead of IP addresses.   
+It helps in faster and more reliable data delivery.
+
+**How It Works:**
+These will complete ini 4steps -
+1. Label Assignment : Each data packet gets a label. 
+2. Label Switching : Routers use that label to forward data quickly — no need to check full IP routing tables.
+3. Fast Forwarding : The packet moves through the fastest path in the network.
+4. Label Removal : When the packet reaches its end point, the label is removed and data is delivered.
+
+** Benefits of MPLS:**
+- Faster packet forwarding.  
+- Better **Quality of Service (QoS)** for voice, video, and real-time traffic.  
+- More reliable and secure than traditional Internet.  
+- Easy to create **private networks** for different offices.
+
+---
+
+###  Leased Lines
+
+**What is a Leased Line?**  
+A Leased Line is a private Internet connection between two places, like a company’s offices. It gives the same speed all the time and is not shared with others.
+
+** Benefits:**
+- Symmetrical speeds (same upload and download).  
+- No sharing with other users because it's a private connection.  
+- Best for companies that need 24/7 data communication.
+- It stays connected 24/7, making it fast and reliable.
+- Used by banks and companies for safe data transfer.
+
+---
+
+###  Broadband WAN Connectivity
+
+**What is Broadband?**  
+Broadband is a high-speed Internet connection that lets you use the Internet for many things like watching videos, video calls, gaming, and downloading files.
+It is called “broadband” because it can carry a large amount of data at once, which makes it much faster than old dial-up Internet.
+
+**Types of Broadband Connections:**
+- **DSL (Digital Subscriber Line)** – uses telephone lines.  
+- **Cable Internet** – uses TV cables.  
+- **Fiber Optic** – very fast and reliable.  
+- **4G/5G Mobile Networks** – wireless broadband.
+
+** Benefits:**
+- Cost-effective and easy to install.  
+- High-speed Internet access.  
+- Supports multiple users and devices.  
+- Suitable for remote work and small offices.
+
+#### Reference [Day 17][(https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43)
+---
+
