@@ -47,4 +47,4 @@ It will do the same thing controlling network traffic but more precisely. It wil
 - It is used only when you want to block or allow specific protocol or port on a network.
 
 ![ACL Lab](https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
-#### Reference [Day 15]([https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823))
+#### Reference [Day 15](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823)
