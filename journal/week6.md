@@ -117,5 +117,5 @@ Benifits of PAT are it allows many devices for sharing one public IP address, co
 4. Cloud Service Access - By using NAT, Organizations provide controlled access to cloud resources while maintaining internal network segmentation.
 5. Testing & Developemnt - They canuse to simulate production networks with different addressing schemes.
    
-#### NAT-PAT [Image](https://github.com/pratikshavanjare/Networking-1/blob/cf507db41f7a88f30f5c7480aaa046deac9bd80e/Media/NAT-PAT.png)
+#### NAT-PAT[Image](https://github.com/pratikshavanjare/Networking-1/blob/cf507db41f7a88f30f5c7480aaa046deac9bd80e/Media/NAT-PAT.png)
 #### Reference [Day 14](https://claude.ai/public/artifacts/553de791-6828-4740-becf-0fb4af7e53b7)
