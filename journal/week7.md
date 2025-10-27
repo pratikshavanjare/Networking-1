@@ -28,7 +28,7 @@ There are two types of ACL -
 1. Standard ACL
 2. Extended ACL
 
-#### Standard ACL - 
+#### 1. Standard ACL - 
 It is used to allow or block traffic based only on the source IP address. It is simpler but less flexible than extended ACL. 
 
 ##### Characteristics
@@ -37,7 +37,7 @@ It is used to allow or block traffic based only on the source IP address. It is 
 - It always usually placed near to the destination.
 - It is used only when you want to block or allow entire network.
 
-#### Extended ACL
+#### 2. Extended ACL
 It will do the same thing controlling network traffic but more precisely. It will use source IP as well as Destination IP, protocol and port number for filtering traffic.
 
 ##### Characteristics
