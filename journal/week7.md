@@ -46,5 +46,55 @@ It will do the same thing controlling network traffic but more precisely. It wil
 - It always usually placed near to the Source.
 - It is used only when you want to block or allow specific protocol or port on a network.
 
-![ACL Lab](https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
 #### Reference [Day 15](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823)
+
+
+
+## LAN Switching
+
+###  What is LAN Switching?
+It is a process used in computer networks to transfer data within a Local Area Network (LAN).  It allows multiple devices like PCs, printers, and servers to communicate efficiently using network switches.
+
+---
+
+###  How Switches Work
+A switch works at Layer 2 (Data Link Layer) of the OSI model. It uses MAC addresses to decide where to send each data frame.
+
+**Basic steps:**
+1. The switch receives a frame from one device.  
+2. It reads the source and destination MAC addresses.  
+3. Based on its MAC address table, it sends the frame to the correct device.  
+
+This process helps in **reducing collisions** and improving **network performance**.
+
+---
+
+###  Switch Learning Process
+Switches build a **MAC Address Table** (also called a CAM table) to remember which device is connected to which port.
+
+**Learning Steps:**
+The whole process will complete in four steps -
+1. **Learning:**  
+   When a frame enters a switch, it notes the **source MAC address** and the **port** it came from.  
+   → Adds this info to the MAC table.
+2. **Forwarding:**  
+   When the switch receives another frame, it checks the **destination MAC** in its table.  
+   → If it knows the port, it sends the frame there.
+3. **Flooding:**  
+   If the destination MAC is **unknown**, the switch sends (floods) the frame to all ports except the one it came from.
+4. **Aging:**  
+   Entries in the MAC table are **removed after a time** if no traffic is seen from that MAC.
+
+---
+
+###  Frame Forwarding Methods
+Switches can forward frames in different ways:
+
+| Method | Description |
+|---------|--------------|
+| **Store-and-Forward** | The switch receives the entire frame, checks for errors (CRC), and then forwards it. Most accurate but slightly slower. |
+| **Cut-Through** | The switch starts forwarding as soon as it reads the destination MAC. Faster but less error-checking. |
+| **Fragment-Free** | A balance between both — it checks the first 64 bytes for errors before forwarding. |
+
+---
+#### Reference [Day 16](https://claude.ai/public/artifacts/c07e6c2a-f9ae-4abd-a263-adb67b666bc9))
