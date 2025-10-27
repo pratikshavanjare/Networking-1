@@ -168,6 +168,6 @@ It is called “broadband” because it can carry a large amount of data at once
 - Supports multiple users and devices.  
 - Suitable for remote work and small offices.
 
-#### Reference [Day 17][(https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43)
+#### Reference [Day 17](https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43)
 ---
 
