@@ -1,6 +1,6 @@
-#### Basic Configuration 
+## Basic Configuration 
 
-##### Tasks: 
+#### Tasks: 
 Power on devices & then configure the devices as follow :
 
 <img width="600" height="150" alt="image" src="https://github.com/user-attachments/assets/79d32345-09d2-445b-9212-4d76ed54cf98" />
@@ -24,7 +24,10 @@ Power on devices & then configure the devices as follow :
 
    
 #### 2. Configure IP Addresses as shown in the diagram
-    
+    Router2(config)# int g0/0/0
+    Router2(config-if)# ip address 10.1.1.2  255.255.255.0
+    Router2(config-if)# end
+    Router2# sh ip int gigabitEthernet 0/0/0
    
 3. Ensure routers can ping each other
    
