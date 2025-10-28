@@ -3,9 +3,9 @@
 ##### Tasks: 
 Power on devices & then configure the devices as follow :
 
-<img width="964" height="261" alt="image" src="https://github.com/user-attachments/assets/79d32345-09d2-445b-9212-4d76ed54cf98" />
+<img width="800" height="150" alt="image" src="https://github.com/user-attachments/assets/79d32345-09d2-445b-9212-4d76ed54cf98" />
 
-1. Configure host names
+#### 1. Configure host names
    The hostname is the name of the router. It helps you identify each router in a network.
    For example:
    
@@ -23,21 +23,22 @@ Power on devices & then configure the devices as follow :
    R2#
 
    
-3. Configure IP Addresses as shown in the diagram
+#### 2. Configure IP Addresses as shown in the diagram
+    
    
-4. Ensure routers can ping each other
+3. Ensure routers can ping each other
    
-5. Configure an enable password of "cisco"
+4. Configure an enable password of "cisco"
   
-6. Encrypt the enable password
+5. Encrypt the enable password
     
-7. Configure a secret password of "cisco"
+6. Configure a secret password of "cisco"
     
-8. Configure the first 5 telnet lines and use a line password of cisco on them
+7. Configure the first 5 telnet lines and use a line password of cisco on them
     
-9. Make sure you can telnet from one device to the other
+8. Make sure you can telnet from one device to the other
     
-10. Configure a consol password of "cisco" and test
+9. Configure a consol password of "cisco" and test
 
 
 
