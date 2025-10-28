@@ -46,18 +46,73 @@ Power on devices & then configure the devices as follow :
    ```
    
 5. Configure an enable password of "cisco"
-
-   
+  
+  ```
+      Router1> en
+      Router1# conf t
+      Router1(config)# enable password cisco     (it is used to set a password for entering privileged EXEC mode on a router)
+      Router1(config)# end
+      Router1(config)# exit                      
+      Router1> en                                (After exit we need to enable again for checking password if its showing)
+      Password :
+      Router1 :
+  ```
   
 6. Encrypt the enable password
+
+ ```
+      Router1> en
+      Router1# conf t
+      Router1(config)# service password-encryption     (it is used to hide (encrypt) all plain-text passwords in the router’s configuration)
+      Router1(config)# end                     
+      Router1# sh run
+  ```
     
 7. Configure a secret password of "cisco"
+
+```
+      Router1> en
+      Router1# conf t
+      Router1(config)# enable secret cisco123     (it is used to set an encrypted (hidden) password for entering privileged EXEC mode on a router)
+      Router1(config)# end                     
+      Router1# sh run
+  ```
     
 8. Configure the first 5 telnet lines and use a line password of cisco on them
-    
-9. Make sure you can telnet from one device to the other
+
+   ```
+      Router1> en
+      Router1# telnet 10.1.1.2                   (Connect to another router with IP 10.1.1.2)
+      Router1(config)# line vty 0 4              (Open lines for Telnet users)
+      Router1(config-line)# login                (Tell router to ask for a password when someone uses Telnet)
+      Router1(config-line)# password cisco       (Set Telnet password = cisco)
+      Router1(config-line)# end                 
+    ```
     
 10. Configure a consol password of "cisco" and test
+
+    ```
+      Router1> en
+      Router1# config t
+      Router1(config)# line consol 0             (It is used to set a password for people who connect directly to the router using console cable)
+      Router1(config-line)# login                (Tell router to ask for a password when someone uses Telnet)
+      Router1(config-line)# password cisco       (Set Telnet password = cisco)
+      Router1(config-line)# end
+
+ Now when you open the router through console, it will ask for password “cisco”
+
+     Router(config)# line console 0
+     Router(config-line)# password cisco
+     Router(config-line)# login
+     Router(config-line)# end
+
+     Router1> en
+     Router1# copy running-config startup-config      (It will save your work permanently on the router)
+     Router1# wr
+          
+    ```
+
+ 
 
 
 
