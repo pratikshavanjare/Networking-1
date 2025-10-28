@@ -40,23 +40,24 @@ Power on devices & then configure the devices as follow :
     
 3. Ensure routers can ping each other
 
-   ` Router1# sh arp  (it shows ARP Table, means which devices are connected to your router by       their IP & MAC addreses)
+   ```
+     Router1# sh arp  (it shows ARP Table, means which devices are connected to your router by       their IP & MAC addreses)
      Router1# ping 10.1.1.2      (it is used to check connectivity between router)
-   `
+   ```
    
-4. Configure an enable password of "cisco"
+5. Configure an enable password of "cisco"
 
    
   
-5. Encrypt the enable password
+6. Encrypt the enable password
     
-6. Configure a secret password of "cisco"
+7. Configure a secret password of "cisco"
     
-7. Configure the first 5 telnet lines and use a line password of cisco on them
+8. Configure the first 5 telnet lines and use a line password of cisco on them
     
-8. Make sure you can telnet from one device to the other
+9. Make sure you can telnet from one device to the other
     
-9. Configure a consol password of "cisco" and test
+10. Configure a consol password of "cisco" and test
 
 
 
