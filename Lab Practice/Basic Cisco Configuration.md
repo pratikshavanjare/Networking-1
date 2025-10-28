@@ -39,14 +39,14 @@ Power on devices & then configure the devices as follow :
     Router2# sh ip int gigabitEthernet 0/0/0
 
     
-3. Ensure routers can ping each other
+#### 3. Ensure routers can ping each other
 
    ```
      Router1# sh arp             (it shows ARP Table, means which devices are connected to your router by their IP & MAC addreses)
      Router1# ping 10.1.1.2      (it is used to check connectivity between router)
    ```
    
-5. Configure an enable password of "cisco"
+#### 4. Configure an enable password of "cisco"
   
   ```
       Router1> en
@@ -59,7 +59,7 @@ Power on devices & then configure the devices as follow :
       Router1 :
   ```
   
-6. Encrypt the enable password
+#### 5. Encrypt the enable password
 
  ```
       Router1> en
@@ -69,9 +69,9 @@ Power on devices & then configure the devices as follow :
       Router1# sh run
   ```
     
-7. Configure a secret password of "cisco"
+#### 6. Configure a secret password of "cisco"
 
-```
+  ```
       Router1> en
       Router1# conf t
       Router1(config)# enable secret cisco123     (it is used to set an encrypted (hidden) password for entering privileged EXEC mode on a router)
@@ -79,9 +79,9 @@ Power on devices & then configure the devices as follow :
       Router1# sh run
   ```
     
-8. Configure the first 5 telnet lines and use a line password of cisco on them
+#### 7. Configure the first 5 telnet lines and use a line password of cisco on them
 
-   ```
+    ```
       Router1> en
       Router1# telnet 10.1.1.2                   (Connect to another router with IP 10.1.1.2)
       Router1(config)# line vty 0 4              (Open lines for Telnet users)
@@ -90,7 +90,7 @@ Power on devices & then configure the devices as follow :
       Router1(config-line)# end                 
     ```
     
-10. Configure a consol password of "cisco" and test
+#### 8. Configure a consol password of "cisco" and test
 
     ```
       Router1> en
@@ -112,6 +112,8 @@ Power on devices & then configure the devices as follow :
      Router1# wr
           
     ```
+
+
 
  
 
