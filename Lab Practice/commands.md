@@ -1,4 +1,25 @@
-#### Basic Configuration 
+<img width="964" height="261" alt="image" src="https://github.com/user-attachments/assets/79d32345-09d2-445b-9212-4d76ed54cf98" />#### Basic Configuration 
+
+##### Tasks: 
+Power on devices & then configure the devices as follow :
+
+1. Configure host names
+
+2. Configure IP Addresses as shown in the diagram
+   
+3. Ensure routers can ping each other
+   
+4. Configure an enable password of "cisco"
+  
+5. Encrypt the enable password
+    
+6. Configure a secret password of "cisco"
+    
+7. Configure the first 5 telnet lines and use a line password of cisco on them
+    
+8. Make sure you can telnet from one device to the other
+    
+9. Configure a consol password of "cisco" and test
 
 
 
