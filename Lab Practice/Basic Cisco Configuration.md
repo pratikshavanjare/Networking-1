@@ -115,13 +115,6 @@ Power on devices & then configure the devices as follow :
 
 
 
- 
-
-
-
-
-
-
 
 
 
