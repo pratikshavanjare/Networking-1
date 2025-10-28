@@ -9,29 +9,44 @@ Power on devices & then configure the devices as follow :
    The hostname is the name of the router. It helps you identify each router in a network.
    For example:
    
-   Router> enable
-   Router# configure terminal
-   Router(config)# hostname Router1
-   R1(config)# exit
-   R1#
-   
-   do the same for another router
-   Router> enable
-   Router# configure terminal
-   Router(config)# hostname Router2
-   R2(config)# exit
-   R2#
+    Router> enable       (Go to router)
+    Router# configure t  (Enter setup mode)
+    Router(config)# hostname Router1  (Give you router a name)
+    Router1(config)# exit  (move back one level)
+    Router1# (done)
 
-   
+   now will do same thing for Router2
+    
+    Router> enable       (Go to router)
+    Router# configure t  (Enter setup mode)
+    Router(config)# hostname Router2  (Give you router a name)
+    Router2(config)# exit  (move back one level)
+    Router2# (done)
+    
 #### 2. Configure IP Addresses as shown in the diagram
+
+    Router1(config)# int g0/0/0    (enter the gigabitethernet interface for configuration)
+    Router2(config-if)# ip address 10.1.1.2  255.255.255.0  (assign ip address with subnet mask)
+    Router2(config-if)# end        (return to the main router)
+    Router2# sh ip int gigabitEthernet 0/0/0       (it will shows th details oh that specific       interface)
+    
+  will do samething for Router2
+  
     Router2(config)# int g0/0/0
     Router2(config-if)# ip address 10.1.1.2  255.255.255.0
     Router2(config-if)# end
     Router2# sh ip int gigabitEthernet 0/0/0
-   
+
+    
 3. Ensure routers can ping each other
+
+    `Router1# sh arp  (it shows ARP Table, means which devices are connected to your router by       their IP & MAC addreses)
+     Router1# ping 10.1.1.2      (it is used to check connectivity between router)
+   `
    
 4. Configure an enable password of "cisco"
+
+   
   
 5. Encrypt the enable password
     
