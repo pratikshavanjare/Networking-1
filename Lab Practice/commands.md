@@ -1,11 +1,10 @@
 ## Basic Configuration 
 
-#### Tasks: 
+### Tasks: 
 Power on devices & then configure the devices as follow :
 
 <img width="600" height="150" alt="image" src="https://github.com/user-attachments/assets/79d32345-09d2-445b-9212-4d76ed54cf98" />
-
-
+<br>
 
 #### 1. Configure host names
    The hostname is the name of the router. It helps you identify each router in a network.
