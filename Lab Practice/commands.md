@@ -40,7 +40,7 @@ Power on devices & then configure the devices as follow :
     
 3. Ensure routers can ping each other
 
-    `Router1# sh arp  (it shows ARP Table, means which devices are connected to your router by       their IP & MAC addreses)
+   ` Router1# sh arp  (it shows ARP Table, means which devices are connected to your router by       their IP & MAC addreses)
      Router1# ping 10.1.1.2      (it is used to check connectivity between router)
    `
    
