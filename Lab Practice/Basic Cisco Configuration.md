@@ -29,7 +29,7 @@ Power on devices & then configure the devices as follow :
     Router1(config)# int g0/0/0                             (enter the gigabitethernet interface for configuration)
     Router2(config-if)# ip address 10.1.1.2  255.255.255.0  (assign ip address with subnet mask)
     Router2(config-if)# end                                 (return to the main router)
-    Router2# sh ip int gigabitEthernet 0/0/0                (it will shows th details oh that specific interface)
+    Router2# sh ip int gigabitEthernet 0/0/0                (it will shows the details of that specific interface)
     
   will do samething for Router2
   
