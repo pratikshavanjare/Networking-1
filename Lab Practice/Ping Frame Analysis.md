@@ -32,7 +32,7 @@ PC1 pings PC2. Answer the following questions based on the echo request message 
 
    k) There is no MAC address
 
-Your Answer: The answer is "e" because when PC1 sends data to another network, so it first sends it to its router. That’s why the destination MAC is the router’s interface (G0/0/0) connected to PC1.
+   Your Answer: The answer is "e" because when PC1 sends data to another network, so it first sends it to its router. That’s why the destination MAC is the  router’s interface (G0/0/0) connected to PC1.
 ```
 R1> en
 R1# sh run
@@ -44,9 +44,10 @@ mac-address 0010.aaaa.aaaa
 ip address 10.1.1.254 255.255.255.0
 ```
 
+
 2) What is the destination MAC address at A in the network?
    
-Your Answer: mac-address 0010.aaaa.aaaa
+   Your Answer: mac-address 0010.aaaa.aaaa
 
 
 3) What encapsulation is used at A in the network?
