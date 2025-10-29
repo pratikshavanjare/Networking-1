@@ -8,7 +8,7 @@ Scenario:
 
 PC1 pings PC2. Answer the following questions based on the echo request message sent from PC1 to PC2.
 
-What is the destination MAC address in the frame at A in the network?
+1) What is the destination MAC address in the frame at A in the network?
 a) PC1's MAC address
 b) PC2's MAC address
 c) Switch1's G1/0/1 MAC address
