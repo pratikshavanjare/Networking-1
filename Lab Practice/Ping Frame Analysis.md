@@ -11,16 +11,27 @@ PC1 pings PC2. Answer the following questions based on the echo request message 
 1) What is the destination MAC address in the frame at A in the network?
    
 a) PC1's MAC address
+
 b) PC2's MAC address
+
 c) Switch1's G1/0/1 MAC address
+
 d) Switch2's G1/0/2 MAC address
+
 e) Router1's G0/0/0 MAC address
+
 f) Router1's Se0/1/0 MAC address
+
 g) Router2's G0/0/0 MAC address
+
 h) Router2's Se0/1/0 MAC address
+
 i) Switch2's G1/0/1 MAC address
+
 j) Switch2's G0/0/0 MAC address
+
 k) There is no MAC address
+
 Your Answer: The answer is "e" because when PC1 sends data to another network, so it first sends it to its router. That’s why the destination MAC is the router’s interface (G0/0/0) connected to PC1.
 ```
 R1> en
@@ -44,16 +55,27 @@ Your Answer: Ethernet II (PC1 and Router1 are connected in a **LAN**, so they us
 
 
 4) What is the destination MAC address in the frame at C in the network?
+   
 a) PC1's MAC address
+
 b) PC2's MAC address
+
 c) Switch1's G1/0/1 MAC address
+
 d) Switch2's G1/0/2 MAC address
+
 e) Router1's G0/0/0 MAC address
+
 f) Router1's Se0/1/0 MAC address
+
 g) Router2's G0/0/0 MAC address
+
 h) Router2's Se0/1/0 MAC address
+
 i) Switch2's G1/0/1 MAC address
+
 j) Switch 2's G0/0/0 MAC address
+
 k) There is no MAC address
 
 Your Answer: The answer is "k-There is no MAC address" 
@@ -66,16 +88,27 @@ and serial links use HDLC encapsulation to send data.
 
 
 6) What is the destination MAC address in the frame at D in the network?
+   
 a) PC1's MAC address
+
 b) PC2's MAC address
+
 c) Switch1's G1/0/1 MAC address
+
 d) Switch2's G1/0/2 MAC address
+
 e) Router1's G0/0/0 MAC address
+
 f) Router1's Se0/1/0 MAC address
+
 g) Router2's G0/0/0 MAC address
+
 h) Router2's Se0/1/0 MAC address
+
 i) Switch2's G1/0/1 MAC address
+
 j) Switch 2's G0/0/0 MAC address
+
 k) There is no MAC address
 
 Your Answer: b "PC2'S MAC address
@@ -94,16 +127,27 @@ Your Answer: Ethernet II
 
 
 9) What is the destination MAC address in the frame at E in the network?
+    
 a) PC1's MAC address
+
 b) PC2's MAC address
+
 c) Switch1's G1/0/1 MAC address
+
 d) Switch2's G1/0/2 MAC address
+
 e) Router1's G0/0/0 MAC address
+
 f) Router1's Se0/1/0 MAC address
+
 g) Router2's G0/0/0 MAC address
+
 h) Router2's Se0/1/0 MAC address
+
 i) Switch2's G1/0/1 MAC address
+
 j) Switch 2's G0/0/0 MAC address
+
 k) There is no MAC address
 
 Your Answer: b) PC2's MAC address
