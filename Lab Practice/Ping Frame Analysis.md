@@ -45,13 +45,13 @@ PC1 pings PC2. Answer the following questions based on the echo request message 
    ip address 10.1.1.254 255.255.255.0
     ```
 
-------
+---
 
 2) What is the destination MAC address at A in the network?
    
    **Your Answer**: mac-address 0010.aaaa.aaaa
 
----------
+---
 
 3) What encapsulation is used at A in the network?
 
