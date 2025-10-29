@@ -8,6 +8,7 @@ Scenario:
 
 PC1 pings PC2. Answer the following questions based on the echo request message sent from PC1 to PC2.
 
+
 1) What is the destination MAC address in the frame at A in the network?
    
    a) PC1's MAC address
@@ -45,14 +46,17 @@ PC1 pings PC2. Answer the following questions based on the echo request message 
     ```
 
 
+
 2) What is the destination MAC address at A in the network?
    
    Your Answer: mac-address 0010.aaaa.aaaa
 
 
+
 3) What encapsulation is used at A in the network?
 
    Your Answer: Ethernet II (PC1 and Router1 are connected in a **LAN**, so they use **Ethernet** to send data)
+
 
 
 4) What is the destination MAC address in the frame at C in the network?
@@ -82,10 +86,12 @@ PC1 pings PC2. Answer the following questions based on the echo request message 
    Your Answer: The answer is "k-There is no MAC address" 
 
 
+
 5) What encapsulation is used at C in the network?
 
    Your Answer: HDLC because At point C, the connection is between Router1 and Router2 over a serial link,
 and serial links use HDLC encapsulation to send data.
+
 
 
 6) What is the destination MAC address in the frame at D in the network?
@@ -115,6 +121,7 @@ and serial links use HDLC encapsulation to send data.
    Your Answer: b "PC2'S MAC address
 
 
+
 7) What is the destination MAC address at D in the network?
 
    Your Answer: 0010.2222.2222
@@ -122,9 +129,11 @@ and serial links use HDLC encapsulation to send data.
    <img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/ca6c86e4-f000-44a2-a1ef-b3510eb454e2" />
 
 
+
 8) What encapsulation is used at D in the network?
 
    Your Answer: Ethernet II
+
 
 
 9) What is the destination MAC address in the frame at E in the network?
@@ -154,9 +163,11 @@ and serial links use HDLC encapsulation to send data.
    Your Answer: b) PC2's MAC address
 
 
+
 10) What is the destination MAC address at E in the network?
 
     Your Answer: The MAC address will be PC2'S MAC address which is 0010.2222.2222
+
 
 
 11) What encapsulation is used at E in the network?
