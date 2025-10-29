@@ -56,9 +56,81 @@ Networkin is most important in the field of IT (Information Technology) because 
 -------------------
 
 # Day 2
-We learnt Types of Networking(LAN, PAN & WAN) in detail -
+We learnt Types of Networking(LAN, MAN & WAN) in detail -
 
-1. **LAN** : LAN is stands for Local Area Network
+1. **LAN** :
+   **Fullform** - Local Area Network
+   **Distance** - 1-2km
+   **Geographical Area** - Small area — like a home, school, or office.
+   **High-Speed** - Its speed is very high appx. (100mbps- 10gbps)
+   **Example** - Wi-Fi in our home, computers in a computer lab.
+   **Use** - It is used for connecting computers & devices in one buiding.
+    **Common Technologies** - LAN mostly uses Ethernet cables or Wi-Fi to connect nearby devices.
+
+3. **MAN** :
+   **Fullform** - Metropoliton Area Network
+   **Distance** - 5-50km
+   **Geographical Area** - Medium area — like a city or large campus.
+   **High-Speed** - High (10mbps - 1gbps)
+   **Example** - City-wide Internet, college campus network.
+   **Use** - It is used for may LAN'S within one city.
+   **Common Technologies** - MAN uses high-speed fiber or wireless links to connect networks across a city.
+
+4. **WAN** :
+   **Fullform** - Wide Area Network
+   **Distance** - Unlimited
+   **Geographical Area** - Large area — across countries or the whole world.
+   **High-Speed** - It has lower or variable speed (1mbps - 100gbps)
+   **Example** - The Internet, bank branch networks.
+   **Use** - It is used for connecting many LAN's * MAN's together.
+   **Common Technologies** - WAN connects countries or continents using satellite or long-distance Internet lines.
+
+
+#### Let's Pratice with few questions -
+
+
+Scenario: You are IT consultant for "EduTech Solutions" - an educational software company.
+
+Company Details:
+Main office: 100 employees in downtown building
+Development center: 50 employees, 5 km away
+Regional sales offices: 3 locations across the state
+Remote workers: 25 employees working from home
+Your Task:
+Design a network architecture plan identifying:
+
+What type of network for main office? (LAN/MAN/WAN) - **LAN**
+How to connect development center? (LAN/MAN/WAN) - **MAN**
+How to connect regional offices? (LAN/MAN/WAN) - **WAN**
+How to support remote workers? (LAN/MAN/WAN) - **WAN**
+
+
+----------------------------------
+
+# Day 3
+
+On Day 3 we learnt about Network Addresses that are IP Address and Mac Address.
+Firstly will know, **What is Network Addresses?** -- A network address is like an identity for each device or it is like a name or address for a device in a networkn that helps computers find each other and share data easily. There are 2 Types of addresses that are below -
+
+
+ 1. **MAC Address**
+  -  A MAC address is a unique ID number given to every device that connects to a network. like      a computer, phone, or printer. It is fixed and cannot be changed because it is built into     -  the device when it is made.
+    It has 12 characters made of numbers and letters, usually written with colons - 00:1A:2B:3C:4D:5E
+    - Its length has 48bits (6 bytes)
+    
+
+ 2. **IP Address**
+    - An IP Address is a unique number given to every device on a network, It helps devices find and talk to each other — like a home address helps people find your house.
+    - There are 2 types of IP Address -
+      1. IPv4: It has 32-bit address
+         Example – 192.168.0.1
+         It uses numbers with dots.
+
+      3. IPv6: It has 128-bit address
+         Example – 2001:0db8:85a3::7334
+         It uses letters and numbers.
+
+
 
 ## for reference--
 
