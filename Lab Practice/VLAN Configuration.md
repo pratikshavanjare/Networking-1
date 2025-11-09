@@ -157,3 +157,6 @@ ping 192.168.10.4
 
 
 ## Design VLANs for a small office
+<img width="1427" height="745" alt="image" src="https://github.com/user-attachments/assets/0b65a2f4-3ecb-4efb-9a6c-d1120c94712d" />
+<img width="521" height="887" alt="image" src="https://github.com/user-attachments/assets/dbbbfdaa-6fd1-4331-8bb9-9e18cedb9d95" />
+
