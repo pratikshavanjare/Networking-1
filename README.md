@@ -39,4 +39,6 @@ This repository documents my **Networking Internship** experience, where I learn
  5. [Week 5](journal/week5.md)
  6. [Week 6](journal/week6.md)
  7. [Week 7](journal/week7.md)
+ 8. [Week 8](journal/week8.md)
+ 9. [Week 9](journal/week9.md)
 
