@@ -226,3 +226,24 @@ IR(config-if)# ip add 192.168.1.254 255.255.255.192
 IR(config-if)# end
 IR# wr
 ```
+
+
+**Router2**
+```
+R2# sh ip int brief
+R# conf t
+R2(config)# int s0/1/1
+R2(config-if)# no shutdown
+R2(config-if)# sh ip int brief
+R2(config-if)# end
+```
+
+
+
+Here, all configuration is done now wrill to checking connectivity to PC to PC, PC to server or PC to routers like--------
+
+ping 8.8.8.8
+ping facebook.com
+try https://cisco.com on PC's web browser
+ping 192.168.1.1
+tracert 192.168.1.1
