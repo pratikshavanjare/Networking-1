@@ -76,7 +76,7 @@ So , here 192.168.1.00 (Network+Subnet) can be written as in binary is 1111 1111
 <img width="1810" height="751" alt="image" src="https://github.com/user-attachments/assets/936e61b1-1484-4804-8dfe-9d9b0fa0fc20" />
 
 
-####Now, Firstly we will configure/create Subnet 1
+#### Now, Firstly we will configure/create Subnet 1
 
 | **Network**  | **Subnet** | **Host** |
 |--------|--------------|--------------|
@@ -128,7 +128,7 @@ Services -----> DHCP --> click to the toggle button to on "service"
 ```
 
 
-####Now, we will configure/create Subnet 2
+#### Now, we will configure/create Subnet 2
 
 | **Network**  | **Subnet** | **Host** |
 |--------|--------------|--------------|
@@ -163,7 +163,7 @@ IR# wr
 ```
 
 
-####Subnet 3
+#### Subnet 3
 
 
 let's configure to **Router2**
@@ -203,7 +203,7 @@ Services -----> DHCP --> click to the toggle button to on "service"
 ```
 
 
-####Subnet 4
+#### Subnet 4
 
 **configure Router2**
 ```
