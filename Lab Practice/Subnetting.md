@@ -60,3 +60,19 @@ So, the number of bits will be 2 for subnets that we will take from hosts.
 |--------|--------------|--------------|
 | 192.168.1. | 00 | 00 0000 | /26 
 
+
+
+So , here 192.168.1.00 (Network+Subnet) can be written as in binary is 1111 1111. 1111 1111. 1111 1111. 00 and the Host part will be rest 00 0000  /26
+
+
+| **Network**  | **Subnet** | **Host** |
+|--------|--------------|--------------|
+| 192.168.1. | 00 | 00 0000 = 192.168.1.0/26| 
+| 192.168.1. | 01 | 00 0000 = 192.168.1.64/26| 
+| 192.168.1. | 10 | 00 0000 = 192.168.1.128/26| 
+| 192.168.1. | 11 | 00 0000 = 192.168.1.192/26| 
+
+<img width="1810" height="751" alt="image" src="https://github.com/user-attachments/assets/936e61b1-1484-4804-8dfe-9d9b0fa0fc20" />
+
+
+**Now, Firstly we will configure/create Subnet 1**
