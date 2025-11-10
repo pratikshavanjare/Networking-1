@@ -1,10 +1,8 @@
 ## DAY 18
 
 # Subnetting & CIDR
----
 
 ## What is Subnetting?
-
 Subnetting means dividing one **big network** into **small networks** called **subnets**. It’s just like dividing one big classroom into small groups so it’s easier to manage and control.
 
 For example:  
