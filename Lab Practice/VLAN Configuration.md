@@ -1,5 +1,5 @@
 ## L2 Switch Implementation 
-<img width="954" height="555" alt="image" src="https://github.com/user-attachments/assets/d30d4b74-24c4-4c64-9214-a4a7b8e6b2c5" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/d30d4b74-24c4-4c64-9214-a4a7b8e6b2c5" />
 
 Here our objective is to configure VLANs on a Layes 2 switch, assign ports to VLANs & verify connectivity within the same VLAN.
 
