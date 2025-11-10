@@ -55,5 +55,6 @@ So, for our network 192.168.1.0/24 we want 4 subnets. So, by applying formula we
 So, the number of bits will be 2 for subnets that we will take from hosts.
 
 **Network**       **Subnet**      **Host**
+
 192.168.1.          00              00 0000/26
 
