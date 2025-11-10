@@ -240,9 +240,10 @@ R2(config-if)# end
 
 
 Here, all configuration is done now wrill to checking connectivity to PC to PC, PC to server or PC to routers like--------
-
+```
 ping 8.8.8.8
 ping facebook.com
 try https://cisco.com on PC's web browser
 ping 192.168.1.1
 tracert 192.168.1.1
+```
