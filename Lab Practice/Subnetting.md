@@ -58,5 +58,5 @@ So, the number of bits will be 2 for subnets that we will take from hosts.
 
 | **Network**  | **Subnet** | **Host** |
 |--------|--------------|--------------|
-| 192.168.1. | 00 | 00 0000 | /26 | 
+| 192.168.1. | 00 | 00 0000 | /26 
 
