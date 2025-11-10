@@ -76,3 +76,56 @@ So , here 192.168.1.00 (Network+Subnet) can be written as in binary is 1111 1111
 
 
 **Now, Firstly we will configure/create Subnet 1**
+
+| **Network**  | **Subnet** | **Host** |
+|--------|--------------|--------------|
+| Net = 192.168.1. | 00 | 00 0000 = 192.168.1.0/26| 
+| 1st = 192.168.1. | 00 | 00 0001 = 192.168.1.1/26| 
+
+| 3rd Last = 192.168.1. | 00 | 11 1100 = 192.168.1.60/26| 
+| 2nd Last = 192.168.1. | 00 | 11 1101 = 192.168.1.61/26| 
+| Last = 192.168.1. | 00 | 11 1110 = 192.168.1.62/26| 
+| Boadcast = 192.168.1. | 00 | 11 1111 = 192.168.1.63/26| 
+
+"Broadcast address can be find ---> Have a look to the next subnet & subtractone to get to broadcast address to the previous subnet.
+
+Firstly configure to **Router1**
+```
+R1 > en
+R1# sh ip int brief
+R1# config t
+R1(config-if)# no shutdown
+R1(config-if)# ip add 192.168.1.62 255.255.255.192
+R1(config-if)# end
+R1# sh ip
+```
+
+then **Switch1**
+```
+Switch> en
+Switch# config t
+Switch(config)# hostname S1
+S1(config)# int vlan 1
+S1(config-if)# no shut
+S1(config-if)# ip add 192.168.1.61 255.255.255.192
+S1(config-if)# end
+S1# sh ip int brief
+S1# wr
+```
+
+then **Server1**
+```
+IP add -----> 192.168.1.60 (config-> Fa0)
+
+              255.255.255.192
+
+Default Gateway -----> 192.168.1.62 (config-> Settings)
+
+                        8.8.8.8
+
+Services -----> DHCP --> click to the toggle button to on "service"
+                         Default Gateway - 192.168.1.62
+                         DNS - 8.8.8.8
+                 Start IP add -------> 192    168    1    1
+                 Maximum no. of users ---> 50
+```
