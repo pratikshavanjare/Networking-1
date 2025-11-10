@@ -3,7 +3,7 @@
 
 Here our objective is to configure VLANs on a Layes 2 switch, assign ports to VLANs & verify connectivity within the same VLAN.
 
-<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/5bc9c789-1be2-4db2-86b3-2910aedc6479" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/5bc9c789-1be2-4db2-86b3-2910aedc6479" />
 
 Let's solve it in packet tracer, Here will configure below step by step - 
 
@@ -80,7 +80,7 @@ ping 192.168.10.4
 
 Here our objective is to configure VLANs on a 3 Layer switch, enable inter-VLAN routing, verify communication between different VLANs.
 
-<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/16521d6f-a9cb-451e-83c9-17753f4b94fc" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/16521d6f-a9cb-451e-83c9-17753f4b94fc" />
 
 
 ##  Configuration Steps
