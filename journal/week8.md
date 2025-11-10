@@ -53,10 +53,10 @@ SSH allows you to **securely log in** to another device (like a router, Linux se
 
 | Tool | Purpose | Protocol | Secure | Common Port |
 |------|----------|-----------|---------|--------------|
-| **Ping** | Check basic network connectivity | ICMP | ❌ No | N/A |
-| **Traceroute / Tracert** | Find the route packets take | ICMP / UDP | ❌ No | N/A |
-| **Telnet** | Test or connect to remote ports | TCP | ❌ No | 23 |
-| **SSH** | Secure remote login to a device | TCP | ✅ Yes | 22 |
+| **Ping** | Check basic network connectivity | ICMP | No | N/A |
+| **Traceroute / Tracert** | Find the route packets take | ICMP / UDP | No | N/A |
+| **Telnet** | Test or connect to remote ports | TCP | No | 23 |
+| **SSH** | Secure remote login to a device | TCP | Yes | 22 |
 
 
 #### Reference [Day 18]([https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43](https://claude.ai/public/artifacts/f62c7089-2ba4-41ec-ac60-2d38a54a65d9))
