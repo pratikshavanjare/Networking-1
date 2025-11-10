@@ -75,7 +75,7 @@ So , here 192.168.1.00 (Network+Subnet) can be written as in binary is 1111 1111
 <img width="1810" height="751" alt="image" src="https://github.com/user-attachments/assets/936e61b1-1484-4804-8dfe-9d9b0fa0fc20" />
 
 
-**Now, Firstly we will configure/create Subnet 1**
+####Now, Firstly we will configure/create Subnet 1
 
 | **Network**  | **Subnet** | **Host** |
 |--------|--------------|--------------|
@@ -102,9 +102,9 @@ R1# sh ip
 
 then **Switch1**
 ```
-Switch> en
-Switch# config t
-Switch(config)# hostname S1
+Switch1> en
+Switch1# config t
+Switch1(config)# hostname S1
 S1(config)# int vlan 1
 S1(config-if)# no shut
 S1(config-if)# ip add 192.168.1.61 255.255.255.192
@@ -116,16 +116,113 @@ S1# wr
 then **Server1**
 ```
 IP add -----> 192.168.1.60 (config-> Fa0)
-
               255.255.255.192
-
 Default Gateway -----> 192.168.1.62 (config-> Settings)
-
                         8.8.8.8
-
 Services -----> DHCP --> click to the toggle button to on "service"
                          Default Gateway - 192.168.1.62
                          DNS - 8.8.8.8
-                 Start IP add -------> 192    168    1    1
-                 Maximum no. of users ---> 50
+                Start IP add -------> 192    168    1    1
+                Maximum no. of users ---> 50
+```
+
+
+####Now, we will configure/create Subnet 2
+
+| **Network**  | **Subnet** | **Host** |
+|--------|--------------|--------------|
+| Net = 192.168.1. | 01 | 00 0000 = 192.168.1.64/26| 
+| 1st = 192.168.1. | 01 | 00 0001 = 192.168.1.65/26| 
+
+| 3rd Last = 192.168.1. | 01 | 11 1100 = 192.168.1.124/26| 
+| 2nd Last = 192.168.1. | 01 | 11 1101 = 192.168.1.125/26| 
+| Last = 192.168.1. | 01 | 11 1110 = 192.168.1.126/26| 
+| Boadcast = 192.168.1. | 01 | 11 1111 = 192.168.1.127/26| 
+
+**Router1**
+```
+R1# config t
+R1(config)# int s0/1/0
+R1(config-if)# no shutdown
+R1(config-if)# ip add 192.168.1.65 255.255.255.192
+R1(config-if)# end
+R1# sh ip int brief
+```
+
+**IntRouter**
+```
+IR# en
+IR# sh ip int brief
+IR# config t
+IR(config)# int s0/1/0
+IR(config-if)# no shutdown
+IR(config-if)# ip add 192.168.1.126 255.255.255.192
+IR(config-if)# end
+IR# wr
+```
+
+
+####Subnet 3
+
+
+let's configure to **Router2**
+```
+R2 > en
+R2# config t
+R2(config)# int g0/0/0
+R2(config-if)# ip add 192.168.1.190 255.255.255.192
+R2(config-if)# no shutdown
+```
+
+then **Switch2**
+```
+Switch2> en
+Switch2# config t
+Switch2(config)# hostname S2
+S2(config)# int vlan 1
+S2(config-if)# ip add 192.168.1.1 255.255.255.192
+S2(config-if)# no shut
+S2(config-if)# end
+S2# sh ip int brief
+S2# wr
+```
+
+then **Server2**
+```
+IP add -----> 192.168.1.188 (config-> Fa0)
+              255.255.255.192
+Default Gateway -----> 192.168.1.190 (config-> Settings)
+                        8.8.8.8
+Services -----> DHCP --> click to the toggle button to on "service"
+                         Default Gateway - 192.168.1.190
+                         DNS - 8.8.8.8
+                Start IP add -------> 192    168    1    129
+                Subnet Mask --------> 255    255    255  192
+                Maximum no. of users ---> 10
+```
+
+
+####Subnet 4
+
+**configure Router2**
+```
+R2# sh ip int brief
+R# conf t
+R2(config)# int s0/1/0
+R2(config-if)# no shutdown
+R2(config-if)# ip add 192.168.1.193 255.255.255.192
+R2(config-if)# end
+```
+
+
+**IntRouter**
+```
+IR# en
+IR# sh ip int brief
+IR# config t
+IR(config)# int s0/1/1
+IR(config-if)# no shutdown
+IR(config-if)# ip add 192.168.1.254 255.255.255.192
+IR(config-if)# end
+IR# wr
 ```
