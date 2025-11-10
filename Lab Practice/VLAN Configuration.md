@@ -3,7 +3,7 @@
 
 Here our objective is to configure VLANs on a Layes 2 switch, assign ports to VLANs & verify connectivity within the same VLAN.
 
-<img width="1241" height="751" alt="image" src="https://github.com/user-attachments/assets/5bc9c789-1be2-4db2-86b3-2910aedc6479" />
+<img width="900" height="600" alt="image" src="https://github.com/user-attachments/assets/5bc9c789-1be2-4db2-86b3-2910aedc6479" />
 
 Let's solve it in packet tracer, Here will configure below step by step - 
 
@@ -76,11 +76,11 @@ ping 192.168.10.4
 
 ## L3 Switch Implementation 
 
-<img width="807" height="557" alt="image" src="https://github.com/user-attachments/assets/2db736b4-0ea9-4755-9c05-5651371f3e6c" />
+<img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/2db736b4-0ea9-4755-9c05-5651371f3e6c" />
 
 Here our objective is to configure VLANs on a 3 Layer switch, enable inter-VLAN routing, verify communication between different VLANs.
 
-<img width="1219" height="746" alt="image" src="https://github.com/user-attachments/assets/16521d6f-a9cb-451e-83c9-17753f4b94fc" />
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/16521d6f-a9cb-451e-83c9-17753f4b94fc" />
 
 
 ##  Configuration Steps
@@ -157,11 +157,11 @@ ping 192.168.10.4
 ------------------------------------------------------
 
 ## Design VLANs for a small office
-<img width="1427" height="745" alt="image" src="https://github.com/user-attachments/assets/0b65a2f4-3ecb-4efb-9a6c-d1120c94712d" />
+<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/0b65a2f4-3ecb-4efb-9a6c-d1120c94712d" />
 
 Let's do it on packet tracer step by step -
 
-<img width="1478" height="754" alt="image" src="https://github.com/user-attachments/assets/8edb4981-1915-4b61-8813-0086e950cc63" />
+<img width="1200" height="600" alt="image" src="https://github.com/user-attachments/assets/8edb4981-1915-4b61-8813-0086e950cc63" />
 
 ### 1 VLAN Configuration on L3 Switch
 ```
