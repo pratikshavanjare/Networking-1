@@ -37,11 +37,12 @@ So, here in this lab we have main network that is - 192.168.1.0/24 that we will 
 Let's divide it --
 
 * Binary of 24 is -
+* ```
   1111 1111. 1111 1111. 1111 1111. 0000 0000 = 24
   255      . 255      . 255      . 0         = Subnet Mask
   |______________________|       |_____|
           Network                 Host
-
+  ```
 Subnet means "Stealing" we will make a new ip address by changing their hosts. And the formula for calculating subnet is - 2^n
 
 2^n ---->   Subnets 2^2 = 4 Subnets (Here 2^**2** is the number of bits that we stealing or using for the subnet portion)
