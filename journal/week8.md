@@ -46,3 +46,14 @@ SSH allows you to **securely log in** to another device (like a router, Linux se
 - Uses **TCP Port 22**  
 - Encrypts all data so it’s safe to use even on public networks.  
 - Common for configuring network devices remotely.
+
+
+
+## 🧾 **Tool Comparison Table**
+
+| Tool | Purpose | Protocol | Secure | Common Port |
+|------|----------|-----------|---------|--------------|
+| **Ping** | Check basic network connectivity | ICMP | ❌ No | N/A |
+| **Traceroute / Tracert** | Find the route packets take | ICMP / UDP | ❌ No | N/A |
+| **Telnet** | Test or connect to remote ports | TCP | ❌ No | 23 |
+| **SSH** | Secure remote login to a device | TCP | ✅ Yes | 22 |
