@@ -78,31 +78,6 @@ We lose 2 IPs each time — one for **Network** and one for **Broadcast**.
 
 ---
 
-## Example: Dividing a Network
-
-We have a big network:  
-**192.168.1.0/24** → 256 IPs (from 192.168.1.0 to 192.168.1.255)
-
-We want to make **4 small networks**.
-
-### Step 1: Find bits to borrow  
-We need 4 subnets → 2² = 4 → so we borrow **2 bits**.
-
-### Step 2: New subnet mask  
-Old = /24  
-New = /26 → Subnet Mask = **255.255.255.192**
-
-### Step 3: Subnets created
-
-| Subnet | Network Address | Usable IPs | Broadcast |
-|--------|------------------|-------------|------------|
-| 1 | 192.168.1.0 | 192.168.1.1 – 192.168.1.62 | 192.168.1.63 |
-| 2 | 192.168.1.64 | 192.168.1.65 – 192.168.1.126 | 192.168.1.127 |
-| 3 | 192.168.1.128 | 192.168.1.129 – 192.168.1.190 | 192.168.1.191 |
-| 4 | 192.168.1.192 | 192.168.1.193 – 192.168.1.254 | 192.168.1.255 |
-
----
-
 ## Meaning of Addresses
 
 | Type | Example | Meaning |
