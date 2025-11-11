@@ -11,47 +11,31 @@ Let's do simple question step by step---
 Ware taking example of class C. Subnetting will complete in 6 steps...
 Suppose, we want to connect 100 PCs via 4 switches . so, there will be 100ips will be used and rest of 156 ips will be waste. so, thatit will reduce the wastage of ip address. 
 
-1. **Required Host**
+1. **Required Host** -
    Total no. of PCs are 100
    so, we need only 2^7=128
    that means, Host = 7
    
-2. **Converted Network bits = Total host bits - Required host bits**
+2. **Converted Network bits = Total host bits - Required host bits** -
    Total host bits are 8 & Required host bits are 7. so,
    8-7 = 1(Network bit)
 
-3. **Total Network bits = Total Network bits + Converted Network bits**
+3. **Total Network bits = Total Network bits + Converted Network bits** -
    Total network bits will be 24 because in class there will be 3 octacts & each octet has 8 bits.so, 8+8+8 =24
    & we had already Converted Network bits is 1. so,
    24 + 1 = /25
 
-4. **Subnets**
+4. **Subnets** -
    2^n = 2^1 = 2 (Here n is network bits)
 
-5. **Blocksize**
+5. **Blocksize** -
    2^H = 2^7 = 128 (Here H is host)
 
-6. **Range**
+6. **Range** -
    Main IP add is 192.168.1.0 . So, here it will divide it into 2 subnets, that will be -
    192.168.1.1/25(Network ID) & 192.168.1.127/25(Broadcast ID)
 
 
-
-
-
-
-
-
-
-
-
-
-## What is Subnetting?
-Subnetting means dividing one **big network** into **small networks** called **subnets**. It’s just like dividing one big classroom into small groups so it’s easier to manage and control.
-
-For example:  
-If we have a big network of 192.168.1.0, we can break it into smaller parts so each department or group gets its own mini network.
----
 
 ## Why We Use Subnetting
 
@@ -142,29 +126,6 @@ New = /26 → Subnet Mask = **255.255.255.192**
 
 ---
 
-## Real-Life Example
-
-Let’s say a company has 4 departments:
-- HR  
-- IT  
-- Sales  
-- Finance  
-
-You don’t want them all on the same network.  
-So, you create 4 subnets from 192.168.1.0/24:
-
-| Department | Subnet | IP Range | Devices |
-|-------------|---------|-----------|----------|
-| HR | 192.168.1.0/26 | 192.168.1.1 – 62 | 60 |
-| IT | 192.168.1.64/26 | 192.168.1.65 – 126 | 60 |
-| Sales | 192.168.1.128/26 | 192.168.1.129 – 190 | 60 |
-| Finance | 192.168.1.192/26 | 192.168.1.193 – 254 | 60 |
-
-Now each department has its own small network.  
-This makes the network faster, safer, and easier to manage.
-
----
----------------------------------------------------------
 
 
 # CIDR (Classless Inter-Domain Routing) – Simple Explanation
