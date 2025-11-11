@@ -2,6 +2,50 @@
 
 # Subnetting & CIDR
 
+
+## What is Subnetting?
+Dividing a large block of networks into smaller parts. and we are doing subneeting to reduce the ip add wastage. 
+Let's take an example, There are two computers with ip address 1.1.1.1 & 1.2.1.1 respectively. They can communicate because , In class C first bits should be same. So, it will communicate but if IPs will be different like 1.1.1.1 want to communicate 7.2.1.1 it will can't. So,for that it will need reouter for communicating different networks.
+
+Let's do simple question step by step---
+Ware taking example of class C. Subnetting will complete in 6 steps...
+Suppose, we want to connect 100 PCs via 4 switches . so, there will be 100ips will be used and rest of 156 ips will be waste. so, thatit will reduce the wastage of ip address. 
+
+1. **Required Host**
+   Total no. of PCs are 100
+   so, we need only 2^7=128
+   that means, Host = 7
+   
+2. **Converted Network bits = Total host bits - Required host bits**
+   Total host bits are 8 & Required host bits are 7. so,
+   8-7 = 1(Network bit)
+
+3. **Total Network bits = Total Network bits + Converted Network bits**
+   Total network bits will be 24 because in class there will be 3 octacts & each octet has 8 bits.so, 8+8+8 =24
+   & we had already Converted Network bits is 1. so,
+   24 + 1 = /25
+
+4. **Subnets**
+   2^n = 2^1 = 2 (Here n is network bits)
+
+5. **Blocksize**
+   2^H = 2^7 = 128 (Here H is host)
+
+6. **Range**
+   Main IP add is 192.168.1.0 . So, here it will divide it into 2 subnets, that will be -
+   192.168.1.1/25(Network ID) & 192.168.1.127/25(Broadcast ID)
+
+
+
+
+
+
+
+
+
+
+
+
 ## What is Subnetting?
 Subnetting means dividing one **big network** into **small networks** called **subnets**. It’s just like dividing one big classroom into small groups so it’s easier to manage and control.
 
