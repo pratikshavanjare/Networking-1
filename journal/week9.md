@@ -103,7 +103,9 @@ We lose 2 IPs each time — one for **Network** and one for **Broadcast**.
 
 
 
-# CIDR (Classless Inter-Domain Routing) – Simple Explanation
+
+
+# CIDR (Classless Inter-Domain Routing) – 
 
 ---
 
