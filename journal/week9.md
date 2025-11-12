@@ -63,7 +63,7 @@ Example:
 
 ---
 
-## Subnet Mask (Simple View)
+## Subnet Mask
 
 The **subnet mask** shows how many bits are for network and how many for host.
 
@@ -111,15 +111,30 @@ We lose 2 IPs each time — one for **Network** and one for **Broadcast**.
 
 ## What is CIDR?
 
-**CIDR** stands for **Classless Inter-Domain Routing**.  
-It’s a way to **write and manage IP addresses more efficiently**.
-
+**CIDR** stands for **Classless Inter-Domain Routing**. It’s a way to **write and manage IP addresses more efficiently**.
 Before CIDR, networks were divided into fixed classes (A, B, C).  
 But this wasted many IP addresses.
 
 So CIDR was created to **break free from fixed classes** and allow **flexible subnetting**.
 
 ---
+
+1. **No Classless** - It means IP addresses don’t follow old A/B/C classes (like Class A = /8, Class B = /16, etc). Instead, we use slash notation (/something) to show how many bits are used for the network part.
+2. **Only Blocks** - It has only blocks like, total bits are 32 in which 28(Block ID) & 4(Host ID) and if we want to calculate hosts so that will be, 2^4 = 16 Hosts.
+3. **Notation(n)** - Its a mask or number of bits represent block or network. like -
+   200.10.20.40/28 this is an IP Address with subnet mask will be 255.255.255.240 (here 28 is mask, so if we convert 28 to binary number ,we will get 240).
+   Now, will calculate the Network ID, Converting last octet to binary 200.10.20.40/28 to 20.10.20.0010 1000 then except 4 will do 0, 200.10.20.0010 0000 , then      will get Network ID 200.10.20.32/28.
+
+   Another Method is -
+   255.255.255.240
+   200.10.20.40
+   ---------------
+   255.10.20.32/28 (will get Network ID after dividing this)
+
+## Rules of CIDR -
+1. Address should be contigous like, 200.10.20.32, 200.10.20.33, 200.10.20.34..........
+2. Number of Addresses in a block must be in power of 2.
+3. First address of every block must be evenly divisible with size of block.
 
 ## Example of CIDR Notation
 
@@ -163,34 +178,5 @@ So `/26` means:
 - 26 bits → for network  
 - 6 bits → for host  
 - Subnet mask = 255.255.255.192
-
----
-
-## Example: Difference Between /24 and /26
-
-| CIDR | Subnet Mask | Total IPs | Usable IPs | Example Range |
-|------|--------------|------------|-------------|----------------|
-| /24 | 255.255.255.0 | 256 | 254 | 192.168.1.0 – 192.168.1.255 |
-| /26 | 255.255.255.192 | 64 | 62 | 192.168.1.0 – 192.168.1.63 |
-
-So, `/26` is just a **smaller piece** of the `/24` network.
-
----
-
-## Real Life Example
-
-Imagine a company has one big network: `192.168.1.0/24`  
-They want to give each department its own smaller subnet.
-
-They can divide it like this:
-
-| Department | Subnet (CIDR) | IP Range | Usable IPs |
-|-------------|----------------|-----------|-------------|
-| HR | 192.168.1.0/26 | 192.168.1.1 – 192.168.1.62 | 62 |
-| IT | 192.168.1.64/26 | 192.168.1.65 – 192.168.1.126 | 62 |
-| Sales | 192.168.1.128/26 | 192.168.1.129 – 192.168.1.190 | 62 |
-| Finance | 192.168.1.192/26 | 192.168.1.193 – 192.168.1.254 | 62 |
-
-Each subnet uses CIDR to show how much of the IP address is for the network.
 
 ---
