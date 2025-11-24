@@ -180,3 +180,47 @@ So `/26` means:
 - Subnet mask = 255.255.255.192
 
 ---
+
+
+
+
+
+# HSRP, VRRP, and GLBP
+
+## 1. HSRP (Hot Standby Router Protocol)
+**Definition:**  
+HSRP is a Cisco proprietary protocol that provides gateway redundancy. It ensures if one router fails, another router automatically becomes the gateway.
+
+**Key Points:**
+- Cisco proprietary
+- One router = Active
+- Second router = Standby
+- Uses a Virtual IP
+- Standby takes over if Active fails
+
+---
+
+## 2. VRRP (Virtual Router Redundancy Protocol)
+**Definition:**  
+VRRP is an open standard protocol that also provides gateway redundancy using a shared virtual IP. If the master router fails, a backup router takes over.
+
+**Key Points:**
+- Open standard (multi-vendor)
+- One router = Master
+- Others = Backup
+- Uses Virtual IP
+- Backup becomes Master when needed
+
+---
+
+## 3. GLBP (Gateway Load Balancing Protocol)
+**Definition:**  
+GLBP is a Cisco proprietary protocol that provides both load balancing and redundancy. Multiple routers can forward traffic simultaneously.
+
+**Key Points:**
+- Cisco proprietary
+- Load balancing + redundancy
+- One router = AVG (Active Virtual Gateway)
+- Multiple routers = AVF (Active Virtual Forwarders)
+- Traffic is shared across routers
+
