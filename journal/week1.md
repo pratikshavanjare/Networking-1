@@ -132,4 +132,44 @@ Firstly will know, **What is Network Addresses?** -- A network address is like a
          Example – 2001:0db8:85a3::7334
          It uses letters and numbers.
 
+**How MAC & IP Addresses Work Together**
+ARP is basically the way a computer figures out “I know the IP, but what is the MAC address?”
+It helps one device talk to another on the same network.
+
+**Step 1: Computer A wants to talk to Computer B**
+Computer A decides to send some data to Computer B.
+* It already knows B’s IP address → 192.168.1.50
+* But it doesn’t know the MAC address linked to that IP
+And without a MAC address, the actual data cannot be sent on a LAN. So, Computer A needs to ask the network, “Who owns this IP?”
+
+**Step 2: ARP Broadcast – Asking the whole network**
+Since Computer A has no idea who has that IP, it sends a broadcast message. Broadcast means everyone on the local network receives the message.
+
+The broadcast message looks like this:
+```
+   Who has 192.168.1.50?
+   Please tell me at MAC AA:BB:CC:DD:EE:FF
+```
+This is like Computer A shouting in a crowded room:
+“Hey, who is 192.168.1.50? Please let me know so I can send you something!” Every device on the network hears it, but only the real owner responds.
+
+**Step 3: Computer B hears the message and replies**
+Computer B checks the broadcast and realizes:
+“That’s my IP! They’re looking for me.”
+So it sends a unicast reply directly back to Computer A:
+```
+   192.168.1.50 is at MAC 11:22:33:44:55:66
+```
+This reply tells Computer A exactly which MAC address belongs to the IP it’s trying to reach. Now, this is solved — Computer A knows both the IP and the MAC of Computer B.
+
+**Step 4: Real data communication finally starts**
+Now that the MAC address is known, Computer A can prepare a proper frame and send actual data.
+A simplified version of the frame looks like this:
+```
+   Destination MAC: 11:22:33:44:55:66
+   Destination IP: 192.168.1.50
+   [Real Data Here]
+```
+From this moment onward, communication becomes smooth. The ARP process is done, and both devices can talk normally.
+
 #### Reference [Day 3](https://claude.ai/public/artifacts/9933647d-a377-4e9e-9b69-e1e4030a2a55)
