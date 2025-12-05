@@ -82,7 +82,7 @@ This layer is like the delivery service for your messages. It splits large files
 
 Here, your messages get an address and a path. The network layer uses IP addresses to figure out where your data should go and decides the best route for it to reach your friend’s phone across the internet.
 
-**Data Link Layer (L2):**
+- **Data Link Layer (L2):**
 
 This layer handles sending your data over the local network. When you use WhatsApp on Wi-Fi or mobile data, it uses MAC addresses to identify devices and organizes your message into frames, checking for errors so everything gets sent correctly.
 
@@ -96,13 +96,13 @@ Finally, the physical layer is how your message actually travels. It converts al
 
 The TCP/IP model is like the set of rules that helps computers “talk” to each other over the internet. Imagine sending a letter to a friend: you need to write it, put it in an envelope, address it, and have it delivered. TCP/IP does the same thing for digital information. It makes sure your messages, videos, or files go from your device to someone else’s device safely and in the right order.
 
-**Application Layer:** This is where users interact with the network through apps like browsers, email, or messaging. It formats data so applications can send and receive it smoothly.
+- **Application Layer:** This is where users interact with the network through apps like browsers, email, or messaging. It formats data so applications can send and receive it smoothly.
 
-**Transport Layer:** Ensures data is delivered reliably and in order between devices, handling errors and retransmissions using protocols like TCP.
+- **Transport Layer:** Ensures data is delivered reliably and in order between devices, handling errors and retransmissions using protocols like TCP.
 
-**Internet Layer:** Sends data across multiple networks by breaking it into packets, assigning addresses, and finding the best route to the destination.
+- **Internet Layer:** Sends data across multiple networks by breaking it into packets, assigning addresses, and finding the best route to the destination.
 
-**Network Access Layer:** Manages the actual sending and receiving of data over physical hardware like cables, switches, and network cards, turning data into signals for transmission.
+- **Network Access Layer:** Manages the actual sending and receiving of data over physical hardware like cables, switches, and network cards, turning data into signals for transmission.
 
 ----------------------------------------------------------------------------------
 
@@ -129,4 +129,4 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 ---
 
 
-#### Reference(https://claude.ai/public/artifacts/a1c59732-03c8-4268-bf63-c8a6b20e8c3c?fullscreen=true)
+#### Reference [Day 1](https://claude.ai/public/artifacts/a1c59732-03c8-4268-bf63-c8a6b20e8c3c?fullscreen=true)
