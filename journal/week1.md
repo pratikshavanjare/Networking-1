@@ -168,8 +168,19 @@ A simplified version of the frame looks like this:
 ```
    Destination MAC: 11:22:33:44:55:66
    Destination IP: 192.168.1.50
-   [Real Data Here]
 ```
 From this moment onward, communication becomes smooth. The ARP process is done, and both devices can talk normally.
+
+
+**What is Packet Filtering?**
+Packet filtering is a basic security method used in firewalls and routers. It checks every incoming or outgoing packet and decides whether to allow it or block it based on a set of rules.
+
+**How Packet Filtering Works**
+
+Packet filtering is like a security guard for your network. Every piece of data comes in tiny packets. These packets have details like who sent it, where it’s going, and which door (port) it wants to enter.
+The firewall looks at these details and decides:
+“Is this safe? Should I let it in?”
+“Is this unknown or risky? Then block it.”
+So if a packet matches the rules you set (like allow port 80 or block port 22), it’s allowed to pass. If it doesn’t match any allowed rule, it gets stopped right there.
 
 #### Reference [Day 3](https://claude.ai/public/artifacts/9933647d-a377-4e9e-9b69-e1e4030a2a55)
