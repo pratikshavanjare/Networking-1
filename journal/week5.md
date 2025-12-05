@@ -29,7 +29,7 @@ where RIP select paths only uses Hop count, it can't able to find the best path 
 
 - **Hierarchical Design** – OSPF uses areas for better scalability and performance.
 
-So overall, OSPF is fast, reliable, scalable, and perfect for medium to large networks.
+   So overall, OSPF is fast, reliable, scalable, and perfect for medium to large networks.
 
 ---
 
@@ -44,13 +44,13 @@ So overall, OSPF is fast, reliable, scalable, and perfect for medium to large ne
 
 ##  OSPF Area Concept
 
-OSPF doesn’t put the whole network into one big area. Instead, it divides the network into multiple areas to reduce overhead and improve performance.
+   OSPF doesn’t put the whole network into one big area. Instead, it divides the network into multiple areas to reduce overhead and improve performance.
 
 - **Backbone – Area 0**
 
-Area 0 is the main backbone of OSPF.
-All other areas must connect to Area 0.
-It acts like the central highway of the network.
+   Area 0 is the main backbone of OSPF.
+   All other areas must connect to Area 0.
+   It acts like the central highway of the network.
 
 
 - **Benefits of Using Areas**
@@ -71,7 +71,7 @@ It acts like the central highway of the network.
 ## Five OSPF Packet Types
 
 1. **Hello Packets**
-Routers send Hello packets every 10 seconds to check if neighbors are alive.
+   Routers send Hello packets every 10 seconds to check if neighbors are alive.
 
 
 2. **DBD (Database Description)**
@@ -86,11 +86,11 @@ Routers send Hello packets every 10 seconds to check if neighbors are alive.
 
 4. **LSU (Link-State Update)**
 
-Sends the actual LSAs containing topology details.
+   Sends the actual LSAs containing topology details.
 
 5. **LSAck (Link-State Acknowledgment)**
 
-Confirms receipt of LSUs for reliable delivery
+   Confirms receipt of LSUs for reliable delivery
 
 
 ## OSPF Metrics & Path Selection
@@ -147,7 +147,7 @@ Confirms receipt of LSUs for reliable delivery
 
 - Divide large networks into multiple areas to control LSA flooding.
 
-
+#### Reference [Day 1](https://claude.ai/public/artifacts/fbf70cac-6f1a-41cf-adcc-6336e3136ab5?fullscreen=true)
 ---
 
 
@@ -160,30 +160,20 @@ It uses a smart algorithm called DUAL, which helps it avoid loops and gives fast
 ---
 
 ## 2. Characteristics of EIGRP
-
 - Developed by Cisco Systems
-  
 - It is a Cisco proprietary, classless routing protocol that supports
 VLSM
-
 - Works as a hybrid routing protocol (Advanced Distance Vector)
 combining features of distance vector and link-state
-
 - Provides fast convergence using the DUAL algorithm (Diffusing
 Update Algorithm)
-
 - Uses composite metric based on bandwidth, delay, load, and
 link reliability
-
 - Uses Autonomous System (AS) numbers to group routers
-
 - Supports multiple network layer protocols (IP, IPX, AppleTalk)
-
 - Uses RTP (Reliable Transport Protocol) for reliable and
 synchronized updates
-
 - Sends reliable multicasts to 224.0.0.10
-
 - It uses port number 88
   
 ---
@@ -245,6 +235,9 @@ route)
    - They confirm that an Update or Reply was received.
    - They look like empty Hello packets.
 
+
+
+#### Reference [Day 2](https://claude.ai/public/artifacts/c030298c-25c3-490e-a1ff-eb03eda1f418?fullscreen=true)
 ----------------------------------------------------------------------
 
 
