@@ -92,6 +92,21 @@ Finally, the physical layer is how your message actually travels. It converts al
 
 ---
 
+# TCP/IP Model 
+
+The TCP/IP model is like the set of rules that helps computers “talk” to each other over the internet. Imagine sending a letter to a friend: you need to write it, put it in an envelope, address it, and have it delivered. TCP/IP does the same thing for digital information. It makes sure your messages, videos, or files go from your device to someone else’s device safely and in the right order.
+
+**Application Layer:** This is where users interact with the network through apps like browsers, email, or messaging. It formats data so applications can send and receive it smoothly.
+
+**Transport Layer:** Ensures data is delivered reliably and in order between devices, handling errors and retransmissions using protocols like TCP.
+
+**Internet Layer:** Sends data across multiple networks by breaking it into packets, assigning addresses, and finding the best route to the destination.
+
+**Network Access Layer:** Manages the actual sending and receiving of data over physical hardware like cables, switches, and network cards, turning data into signals for transmission.
+
+----------------------------------------------------------------------------------
+
+
 
 # OSI Model vs TCP/IP Model
 
@@ -108,6 +123,18 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 | **Network Layer**           | Network                                | Internet                               | IP (IPv4/IPv6), ICMP, ARP, IGMP                                                       |
 | **Data Link Layer**         | Data Link                              | Network Access                         | Ethernet, PPP, Frame Relay, Switches                                                  |
 | **Physical Layer**          | Physical                               | Network Access                         | Cables, Hubs, NIC, Wi-Fi, Bluetooth                                                   |
+
+
+| **Aspect**              | **OSI Model**                                                               | **TCP/IP Model**                                    | **Explanation**                                                                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Full Form**           | Open Systems Interconnection Model                                          | Transmission Control Protocol/Internet Protocol     | OSI is a conceptual framework for understanding network communication, while TCP/IP is a practical model used for real-world networking and Internet communication.                                            |
+| **Number of Layers**    | 7 layers                                                                    | 4 layers                                            | OSI has seven distinct layers (Physical, Data Link, Network, Transport, Session, Presentation, Application), while TCP/IP combines some layers into four: Network Interface, Internet, Transport, Application. |
+| **Purpose**             | Conceptual framework for designing and understanding networks               | Practical model for real-world networking           | OSI is mostly theoretical and helps in education and understanding network design. TCP/IP is designed for actual data communication over the Internet.                                                         |
+| **Layers Included**     | Physical, Data Link, Network, Transport, Session, Presentation, Application | Network Interface, Internet, Transport, Application | OSI separates functions more granularly, whereas TCP/IP combines them to simplify practical implementation.                                                                                                    |
+| **Protocol Dependency** | Protocol-independent (generic model)                                        | Protocol-specific (designed around TCP/IP suite)    | OSI doesn’t depend on any particular protocol. TCP/IP is built specifically to work with its own suite of protocols.                                                                                           |
+| **Usage**               | Mainly theoretical and educational                                          | Widely used in actual network implementation        | OSI is more for learning and reference, TCP/IP is used in real networks like the Internet and intranets.                                                                                                       |
+
+
 
 ---
 
