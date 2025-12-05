@@ -114,15 +114,7 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 
 ---
 
-## 📊 Layer Comparison Table
-
-| Feature / Layer            | **OSI Model (7 Layers)**                | **TCP/IP Model (4 Layers)**            | **Example Protocols**                                                                 |
-|-----------------------------|-----------------------------------------|-----------------------------------------|---------------------------------------------------------------------------------------|
-| **Application Layer**       | Application, Presentation, Session      | Application                            | HTTP, HTTPS, FTP, SMTP, DNS, DHCP, POP3, IMAP                                         |
-| **Transport Layer**         | Transport                              | Transport                              | TCP, UDP                                                                              |
-| **Network Layer**           | Network                                | Internet                               | IP (IPv4/IPv6), ICMP, ARP, IGMP                                                       |
-| **Data Link Layer**         | Data Link                              | Network Access                         | Ethernet, PPP, Frame Relay, Switches                                                  |
-| **Physical Layer**          | Physical                               | Network Access                         | Cables, Hubs, NIC, Wi-Fi, Bluetooth                                                   |
+## Layer Comparison Table
 
 
 | **Aspect**              | **OSI Model**                                                               | **TCP/IP Model**                                    | **Explanation**                                                                                                                                                                                                |
