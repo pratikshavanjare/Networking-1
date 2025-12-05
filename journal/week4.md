@@ -1,33 +1,38 @@
 # Routing and Its Types
 
 ## What is Routing?
-Routing is the process of selecting the best path for data to travel from source to destination across a network.  
+Routing is one of the most important concepts in networking because it decides how data travels from one point to another. Here, I will explain routing in a very simple way—what it is, why it is needed, and how different routing protocols like RIP, OSPF, EIGRP, and BGP work.
+
+Whenever we open a website or send a message, that data doesn’t go in a straight line. It has to pass through different devices and networks. so here, Routing helps choose the best and safest path for that data.
+
+You can think of it like Google Maps.
+Your data is like a car, the network cables are the roads, and the routers are the traffic signals or intersections. Just like Google Maps tells us the fastest route, routers use a routing table to guide the data to the correct destination.
+
 
 ---
 
 ## Types of Routing
 
-### 1. Static Routing
-- Routes are **manually configured** by the network administrator.  
-- Simple, secure, but **does not change automatically** if the network changes.  
-- Best for **small or stable networks**.  
+Routing is mainly of two types: Static Routing and Dynamic Routing.
 
-#### ✅ When to Use (Examples)
-- Small office/home networks.  
-- Networks with very few routes.  
-- When security and stability are more important than flexibility.  
+### 1. Static Routing
+
+In static routing, the network admin has to manually add the routes.
+
+It’s simple to use in small networks and is very secure because nothing changes automatically.the router doesn’t have to calculate anything.
+Since the routes are already manually entered, the router just follows them.It is stable and predictable because nothing changes on its own. We change it only when we want.
+
+But the problem is— if the network grows or a link goes down, you must manually update everything.
+So static routing works well for small, fixed networks.
 
 ---
 
 ### 2. Dynamic Routing
-- Routers **automatically learn and update routes** using routing protocols.  
-- Adapts to **network changes** (like link failure or new paths).  
-- Best for **large and complex networks**.  
 
-#### ✅ When to Use (Examples)
-- Enterprise networks with many routers.  
-- ISPs (Internet Service Providers) to connect large-scale systems.  
-- Data centers where routes change frequently.  
+Here the routers automatically learn and update routes using protocols like RIP, OSPF, EIGRP, and BGP.
+It’s great for medium and large networks because routers can adjust themselves when the network changes.
+It also provides backup paths automatically.
+The only downside is that it uses more CPU and memory, and it’s a bit more complex to configure compared to static routing.
 
 ---
 
@@ -67,14 +72,31 @@ Routing is the process of selecting the best path for data to travel from source
 ---
 
 ## 🛰️ RIP - Routing Information Protocol
-- **Type:** Distance-vector routing protocol  
-- **Metric Used:** Hop count (max 15 hops)  
-- **Updates:** Sent every 30 seconds  
-- **Algorithm:** Bellman-Ford  
-- **Versions:** RIP v1 (Classful), RIP v2 (Classless, supports subnet mask)  
-- **Limitation:** Not suitable for large networks due to hop limit  
 
-### 🧩 Troubleshooting Tips
+RIP is one of the oldest routing protocols.
+It is simple, uses hop count as its metric, and works well in small networks.
+
+- **Oldest IGP:**
+RIP is one of the earliest protocols used for routing inside organizations.
+
+- **Distance Vector Protocol:**
+Hop Count Metric:
+RIP chooses the best path based on hop count. Maximum 15 hops are allowed.
+
+- **Updates every 30 seconds:**
+RIP sends its full routing table to all neighbors every 30 seconds.
+
+- **UDP port 520:**
+It uses UDP port 520 for sending routing updates.
+
+- **Bellman–Ford Algorithm:**
+RIP uses the Bellman–Ford algorithm to calculate paths.
+
+- **Supports RIPv1 & RIPv2:**
+“RIPv1 is classful; RIPv2 supports subnet masks and is classless.”
+ 
+
+###  Troubleshooting Tips
 - Check network connectivity (`ping`, `tracert`)  
 - Verify RIP configuration (correct network statements)  
 - Ensure no route loops exist  
@@ -82,13 +104,10 @@ Routing is the process of selecting the best path for data to travel from source
 
 ---
 
-### 💡 Example Scenario
-- **Intradomain:** RIP or OSPF used within a company’s LANs.  
-- **Interdomain:** BGP used to connect the company network to an ISP.  
+
+#### Reference [Day 1](https://claude.ai/public/artifacts/1921e117-1ea7-41d9-aefb-c5beb03b1c6b)
+#### Reference [Day 2](https://claude.ai/public/artifacts/a28f54e1-e72b-4bdd-af38-6201ec24618a)
 
 
 
-## For refernce --
 
-(https://claude.ai/public/artifacts/1921e117-1ea7-41d9-aefb-c5beb03b1c6b)
-(https://claude.ai/public/artifacts/a28f54e1-e72b-4bdd-af38-6201ec24618a)
