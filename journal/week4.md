@@ -96,12 +96,51 @@ RIP uses the Bellman–Ford algorithm to calculate paths.
 - **Supports RIPv1 & RIPv2:**
 “RIPv1 is classful; RIPv2 supports subnet masks and is classless.”
  
+### RIP Timers
+
+- **Update Timer – 30 sec**
+
+   Every 30 seconds, RIP sends its full routing table to all neighbors.
+
+- **Invalid Timer – 180 sec**
+
+   If no update is received for 180 seconds, the route is marked as invalid — basically, not trusted.
+
+- **Holddown Timer – 180 sec**
+
+  When a route fails, the router waits 180 seconds before accepting any new information about that route to avoid false updates.
+
+- **Flush Timer – 240 sec**
+
+ After 240 seconds, the unreachable route is completely removed from the routing table.
+
+
+ ### Limitations
+
+- It doesn’t consider bandwidth or delay.
+- Older version doesn’t support subnet masks.
+- Every 30 sec, full table broadcast causes extra traffic.
+- Sending full routing tables regularly consumes bandwidth.
+- Anything beyond 15 hops is unreachable.
+
+### Solutions
+
+- **Split Horizon:** Don’t send routes back where they came from.
+- **Route Poisoning:** Mark failed routes as 16 (unreachable).
+- **Poison Reverse:** Send back failed route with metric 16 to confirm failure.
+- **Hold-down Timer:** Wait before accepting new route info to avoid wrong
+updates.
+
+
+ 
 
 ###  Troubleshooting Tips
 - Check network connectivity (`ping`, `tracert`)  
 - Verify RIP configuration (correct network statements)  
 - Ensure no route loops exist  
 - Use `show ip route` and `debug ip rip` (in Cisco devices) for diagnosis  
+
+
 
 ---
 
