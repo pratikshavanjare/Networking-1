@@ -62,8 +62,7 @@ It’s basically a step-by-step guide for how devices talk to each other.
 
 ## 1. WhatsApp  
 
-**Application Layer (L7):**
-This is the part you see and use every day. In WhatsApp, it’s where you type messages, make calls, or send photos and videos. The XMPP protocol works behind the scenes to make sure your message leaves your phone and reaches your friend. You don’t worry about how it travels; you just see your chat on the screen.
+**Application Layer (L7):** This is the part you see and use every day. In WhatsApp, it’s where you type messages, make calls, or send photos and videos. The XMPP                             protocol works behind the scenes to make sure your message leaves your phone and reaches your friend. You don’t worry about how it                                 travels; you just see your chat on the screen.
 
 **Presentation Layer (L6):**
 This layer makes sure your message or media is ready to travel safely. WhatsApp translates your words, compresses pictures or videos so they send faster, and encrypts everything using the Signal Protocol, so no one else can read your messages except the person you sent them to.
