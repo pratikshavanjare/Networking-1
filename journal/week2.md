@@ -62,23 +62,23 @@ It’s basically a step-by-step guide for how devices talk to each other.
 
 ## 1. WhatsApp  
 
-**Application Layer (L7):** 
+- **Application Layer (L7):** 
 
 This is the part you see and use every day. In WhatsApp, it’s where you type messages, make calls, or send photos and videos. The XMPP                             protocol works behind the scenes to make sure your message leaves your phone and reaches your friend. You don’t worry about how it                                 travels; you just see your chat on the screen.
 
-**Presentation Layer (L6):**
+- **Presentation Layer (L6):**
 
 This layer makes sure your message or media is ready to travel safely. WhatsApp translates your words, compresses pictures or videos so they send faster, and encrypts everything using the Signal Protocol, so no one else can read your messages except the person you sent them to.
 
-**Session Layer (L5):**
+- **Session Layer (L5):**
 
 The session layer keeps your conversation going. When you open WhatsApp, it sets up a connection to the server and keeps it active while you chat or call. It also checks that you’re a real user (authentication) and makes sure you can only do the things you’re allowed to do (authorization).
 
-**Transport Layer (L4):**
+- **Transport Layer (L4):**
 
 This layer is like the delivery service for your messages. It splits large files into smaller pieces, controls the speed so your messages don’t overwhelm the network, and makes sure nothing gets lost. WhatsApp uses TCP for sending messages and media safely, and UDP for voice and video calls where speed is more important than perfect delivery.
 
-**Network Layer (L3):**
+- **Network Layer (L3):**
 
 Here, your messages get an address and a path. The network layer uses IP addresses to figure out where your data should go and decides the best route for it to reach your friend’s phone across the internet.
 
@@ -86,7 +86,7 @@ Here, your messages get an address and a path. The network layer uses IP address
 
 This layer handles sending your data over the local network. When you use WhatsApp on Wi-Fi or mobile data, it uses MAC addresses to identify devices and organizes your message into frames, checking for errors so everything gets sent correctly.
 
-**Physical Layer (L1):**
+- **Physical Layer (L1):**
 
 Finally, the physical layer is how your message actually travels. It converts all the data into signals that move over Wi-Fi, 4G, 5G, or mobile towers, so your message can reach your friend’s phone in real life.
 
