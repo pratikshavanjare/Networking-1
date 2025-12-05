@@ -51,6 +51,8 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 4. Look for network flaps or unstable links.  
 5. Use debug commands (`debug ip routing`) carefully to see updates.  
 
+
+#### Reference [Day 1](https://claude.ai/public/artifacts/1921e117-1ea7-41d9-aefb-c5beb03b1c6b)
 ---
 
 
@@ -145,7 +147,6 @@ updates.
 ---
 
 
-#### Reference [Day 1](https://claude.ai/public/artifacts/1921e117-1ea7-41d9-aefb-c5beb03b1c6b)
 #### Reference [Day 2](https://claude.ai/public/artifacts/a28f54e1-e72b-4bdd-af38-6201ec24618a)
 
 
