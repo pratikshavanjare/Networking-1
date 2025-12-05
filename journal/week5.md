@@ -241,3 +241,99 @@ route)
 ----------------------------------------------------------------------
 
 
+# BGP (Border Gateway Protocol)
+
+BGP is the routing protocol that runs the entire internet.
+Whenever data travels between different companies or ISPs, it uses BGP. It is Path-Vector.
+It doesn’t look for the shortest path — it looks for the most reliable and policy-based path.
+
+## Characteristics 
+
+1. **Uses TCP Port 179** -
+BGP uses TCP, so it is very reliable.
+Unlike RIP/OSPF which use UDP, BGP forms stable sessions.
+
+2. **Runs the Global Internet** -
+All ISPs like Jio, Airtel, Google, Amazon — everyone uses BGP to exchange routes.
+
+3. **Focus on Reachability** -
+BGP doesn’t care about shortest path.
+It only cares if a destination is reachable and follows policies.
+
+4. **Highly Scalable** -
+It can handle hundreds of thousands of routes — that’s why the internet depends on it.
+
+5. **Classless Protocol** -
+Supports VLSM and CIDR to reduce routing table size.
+
+6. **Policy-Based Routing** -
+With BGP, companies can choose routes based on business rules — like cost, security, priority.
+
+7.**Slow Convergence** -
+BGP is slower to update because it prioritizes stability over speed.
+
+## eBGP vs iBGP
+
+**eBGP** (External BGP) is the version of BGP used between different autonomous systems, meaning between completely separate networks—like when an enterprise network connects to an ISP, or when two ISPs exchange routes. Because eBGP works across independent networks, it modifies the AS path to prevent loops and usually expects the neighbor to be directly connected. Think of eBGP as two different organizations exchanging routing information so they know how to reach each other’s networks.
+
+**iBGP** (Internal BGP), on the other hand, is used within the same autonomous system. It doesn’t change the AS path or the next-hop because all routers belong to the same internal network. Instead, its job is to distribute the external routes learned from eBGP throughout the inside of the AS. You can think of iBGP as coworkers inside the same organization sharing information so everyone knows how to reach destinations outside the company. Because iBGP doesn’t modify the AS path, it requires a full mesh of peers—or the use of route reflectors—to prevent routing loops.
+
+
+## BGP Path Attributes
+
+- **AS Path:** Shows which ASes the route has passed through. Helps avoid loops.
+
+- **Next-Hop:** Tells the router where to send the traffic next.
+
+- **Local Preference:** Used inside the AS. Higher value = preferred exit path.
+
+- **MED:** Suggests which link other ASes should use to enter your network.
+
+- **Weight:** Cisco-only. Highest weight wins on that router.
+
+## Limitation
+
+**1. Slow convergence**
+
+When a link goes down, BGP takes a long time to update routes. This can cause temporary internet delays or outages.
+
+**2. No built-in security**
+
+BGP trusts all route updates, making it vulnerable to route hijacks or accidental misconfigurations unless extra security tools are used.
+
+**3. Complex to configure and manage**
+
+BGP has many policies and settings. Managing it, especially in large networks, can be hard and error-prone.
+
+**4. Not performance-based**
+
+BGP does not pick routes based on speed or latency. It chooses paths based on rules and policies, not on which path is actually the fastest.
+
+**5. iBGP scalability issues**
+
+Inside a large network, iBGP requires many peer connections. Without route reflectors or confederations, it doesn’t scale well.
+
+
+## Solution 
+
+**1. Slow convergence → Use faster failover techniques**
+
+BGP can take a long time to detect failures, so using faster failover tools helps keep the network stable. One common solution is BFD (Bidirectional Forwarding Detection), which detects link failures in milliseconds and triggers BGP to react quickly. Network administrators can also tune BGP timers or use route damping to prevent frequent route changes from causing instability. These techniques together help BGP recover faster when something goes wrong.
+
+**2. No built-in security → Add external security measures**
+
+Since BGP does not verify whether received routes are legitimate, adding security layers is essential. Tools like RPKI help ensure that the routes being advertised actually belong to the correct owner. Administrators also use prefix filters, max-prefix limits, ACLs, and MD5 authentication to protect BGP sessions from hijacking or accidental leaks. These measures make BGP safer and more reliable on the global internet.
+
+**3. Complex configuration → Use best practices and automation**
+
+BGP is powerful but complicated, and manual configuration can lead to mistakes. Using standardized templates and clear routing policies helps keep setups consistent across devices. Automation tools such as Ansible or NetConf can deploy configurations across many routers at once, reducing human error. This makes managing BGP easier, especially in large networks.
+
+**4. Not performance-based → Combine with other protocols or tools**
+
+Because BGP selects routes based on policies rather than real-time performance, networks often combine it with other technologies to improve traffic flow. Traffic engineering techniques like adjusting local preference or MED values help control outbound and inbound paths. Solutions like SD-WAN, PBR, and QoS can steer traffic based on speed, latency, or application priority. This helps ensure that important traffic always takes the best path.
+
+**5. iBGP scalability issues → Use hierarchical designs**
+
+A full mesh of iBGP peers doesn’t scale well as networks grow, so hierarchical designs are used to make management easier. Route reflectors allow some routers to act as central points for iBGP updates, removing the need for every router to connect to every other one. Another solution is to use confederations, which break a large AS into smaller internal ASes to improve organization and scalability. These designs help large ISPs and enterprises manage BGP more efficiently.
+
+#### Reference [Day 3](https://claude.ai/public/artifacts/819e1cd3-57ee-4398-9446-513c3cce9597)
