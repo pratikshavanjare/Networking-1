@@ -131,4 +131,4 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 
 ## for reference--
 
-(https://claude.ai/public/artifacts/a1c59732-03c8-4268-bf63-c8a6b20e8c3c?fullscreen=true)
+#### Reference [Day 3](https://claude.ai/public/artifacts/a1c59732-03c8-4268-bf63-c8a6b20e8c3c?fullscreen=true)
