@@ -114,7 +114,7 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 
 ---
 
-## Layer Comparison Table
+## Models Comparison Table
 
 
 | **Aspect**              | **OSI Model**                                                               | **TCP/IP Model**                                    | **Explanation**                                                                                                                                                                                                |
@@ -125,44 +125,6 @@ Understanding the difference between the **OSI (Open Systems Interconnection)** 
 | **Layers Included**     | Physical, Data Link, Network, Transport, Session, Presentation, Application | Network Interface, Internet, Transport, Application | OSI separates functions more granularly, whereas TCP/IP combines them to simplify practical implementation.                                                                                                    |
 | **Protocol Dependency** | Protocol-independent (generic model)                                        | Protocol-specific (designed around TCP/IP suite)    | OSI doesn’t depend on any particular protocol. TCP/IP is built specifically to work with its own suite of protocols.                                                                                           |
 | **Usage**               | Mainly theoretical and educational                                          | Widely used in actual network implementation        | OSI is more for learning and reference, TCP/IP is used in real networks like the Internet and intranets.                                                                                                       |
-
-
-
----
-
-## 📝 Key Differences Between OSI and TCP/IP
-
-| Aspect                | **OSI Model**                                                                 | **TCP/IP Model**                                                            |
-|-----------------------|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| **Developed By**      | ISO (International Organization for Standardization)                           | DoD (Department of Defense, USA)                                             |
-| **Number of Layers**  | 7 Layers                                                                       | 4 Layers                                                                     |
-| **Conceptual vs Real**| Theoretical model, rarely implemented directly                                 | Practical model, used in real-world networking                               |
-| **Approach**          | Follows **vertical** approach (strict separation of layers)                     | Follows **horizontal** approach (layers combined for practical implementation)|
-| **Protocol Dependency**| Protocol independent (just a reference model)                                 | Protocol dependent (based on TCP, IP, UDP, etc.)                             |
-| **Flexibility**       | More rigid and complex                                                         | More flexible and simpler                                                    |
-| **Usage**             | Used for understanding and teaching networking concepts                        | Used in real networks (Internet)                                             |
-| **Transport Services**| Provides both connection-oriented (TCP-like) and connectionless (UDP-like)      | Provides TCP (connection-oriented) and UDP (connectionless)                  |
-| **Error Handling**    | Done at transport & data link layer                                            | Done by transport & internet layer                                           |
-| **Examples**          | WhatsApp (Application – OSI 7, Transport – TCP, Network – IP, Physical – Wi-Fi)| YouTube (Application – HTTP/HTTPS, Transport – TCP, Internet – IP)           |
-
----
-
-## 🔄 Example of Data Flow
-
-### OSI Model (7 Layers)
-1. **Application Layer** → User sends a WhatsApp message.  
-2. **Presentation Layer** → Message is encrypted.  
-3. **Session Layer** → Session created between sender & receiver.  
-4. **Transport Layer** → Message is divided into segments (TCP/UDP).  
-5. **Network Layer** → Each segment gets an IP address.  
-6. **Data Link Layer** → Data is converted into frames (MAC address added).  
-7. **Physical Layer** → Bits transmitted via Wi-Fi/cable.  
-
-### TCP/IP Model (4 Layers)
-1. **Application Layer** → WhatsApp uses HTTPS to send the message.  
-2. **Transport Layer** → TCP divides message into packets.  
-3. **Internet Layer** → IP assigns source & destination addresses.  
-4. **Network Access Layer** → Packets converted into frames & sent physically.  
 
 ---
 
