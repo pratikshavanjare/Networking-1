@@ -133,14 +133,3 @@ Firstly will know, **What is Network Addresses?** -- A network address is like a
          It uses letters and numbers.
 
 #### Reference [Day 3](https://claude.ai/public/artifacts/9933647d-a377-4e9e-9b69-e1e4030a2a55)
-## for reference--
-
-# Day 1
-
-
-# Day 2
-
-
-# Day 3
-
-   
