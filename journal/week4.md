@@ -38,13 +38,13 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 
 ## Troubleshooting Steps
 
-### Static Routing Issues
+### 1. Static Routing Issues
 1. Check if the static route is entered correctly (IP, subnet mask, next-hop).  
 2. Verify connectivity with `ping` or `traceroute`.  
 3. Ensure the interface is **up**.  
 4. Look at the **routing table** to confirm the route exists.  
 
-### Dynamic Routing Issues
+### 2. Dynamic Routing Issues
 1. Check if the routing protocol is enabled on the correct interfaces.  
 2. Verify neighbor/adjacency relationships (`show ip ospf neighbor`, `show ip eigrp neighbors`).  
 3. Check for mismatched configurations (like wrong area in OSPF, wrong AS in EIGRP).  
@@ -58,7 +58,8 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 # Interdomain & Intradomain Routing  
 **Routing** is the process of selecting the best path for data packets to travel across networks.
 
-## 🧭 Types of Routing
+##  Types of Routing
+
 ### 1. Intradomain Routing
 - Used **within a single organization or autonomous system (AS)**.  
 - Focuses on efficient routing inside the network.  
@@ -71,7 +72,7 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 
 ---
 
-## 🛰️ RIP - Routing Information Protocol
+##  RIP - Routing Information Protocol
 
 RIP is one of the oldest routing protocols.
 It is simple, uses hop count as its metric, and works well in small networks.
