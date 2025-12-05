@@ -54,6 +54,7 @@ Networkin is most important in the field of IT (Information Technology) because 
 - Data Security - It helps in protecting & monitoring data safely using firewalls and servers.
 - Cloud Computing - Networking gives access to the internet & cloud services like Google Drive, AWS or Azure.
 -------------------
+#### Reference [Day 1](https://claude.ai/public/artifacts/e92959cb-3269-4546-b97d-e5dcd0aee458)
 
 # Day 2
 We learnt Types of Networking(LAN, MAN & WAN) in detail -
@@ -106,6 +107,7 @@ How to support remote workers? (LAN/MAN/WAN) - **WAN**
 
 
 ----------------------------------
+#### Reference [Day 2](https://claude.ai/public/artifacts/f4b54e55-0e65-4185-8eb1-4ecbebbdf880)
 
 # Day 3
 
@@ -130,16 +132,15 @@ Firstly will know, **What is Network Addresses?** -- A network address is like a
          Example – 2001:0db8:85a3::7334
          It uses letters and numbers.
 
-
-
+#### Reference [Day 3](https://claude.ai/public/artifacts/9933647d-a377-4e9e-9b69-e1e4030a2a55)
 ## for reference--
 
 # Day 1
-(https://claude.ai/public/artifacts/e92959cb-3269-4546-b97d-e5dcd0aee458)
+
 
 # Day 2
-(https://claude.ai/public/artifacts/f4b54e55-0e65-4185-8eb1-4ecbebbdf880)
+
 
 # Day 3
-(https://claude.ai/public/artifacts/9933647d-a377-4e9e-9b69-e1e4030a2a55)
+
    
