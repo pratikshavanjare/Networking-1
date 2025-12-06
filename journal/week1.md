@@ -61,7 +61,7 @@ There are 4 types of topologies -
    Pros - It always establish a connection between two nodes (point to point connection).
    Cons - It is difficult for installation & Configuration, It is expensive as well.
 
-<img width="732" height="627" alt="image" src="https://github.com/user-attachments/assets/5a4f2e50-3290-43a2-9660-7827779855fb" />
+<img width="651" height="602" alt="image" src="https://github.com/user-attachments/assets/a98929b1-6db7-4fdb-91da-75a1c57d9065" />
 
 
 ### Importance of Networking in IT 
