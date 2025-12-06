@@ -8,6 +8,8 @@ Whenever we open a website or send a message, that data doesn’t go in a straig
 You can think of it like Google Maps.
 Your data is like a car, the network cables are the roads, and the routers are the traffic signals or intersections. Just like Google Maps tells us the fastest route, routers use a routing table to guide the data to the correct destination.
 
+<img width="859" height="396" alt="Screenshot 2025-12-06 203246" src="https://github.com/user-attachments/assets/945dfc2a-7d85-44e1-9fd9-7cd8467b576d" />
+
 
 ---
 
@@ -71,6 +73,9 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 - Used **between different organizations or autonomous systems**.  
 - Focuses on routing between multiple networks on the Internet.  
 - Example: **BGP (Border Gateway Protocol)**
+
+<img width="1035" height="761" alt="image" src="https://github.com/user-attachments/assets/ea6e24ea-898c-4c54-8981-a1dab05c6133" />
+
 
 ---
 
@@ -142,6 +147,7 @@ updates.
 - Ensure no route loops exist  
 - Use `show ip route` and `debug ip rip` (in Cisco devices) for diagnosis  
 
+<img width="939" height="543" alt="Screenshot 2025-12-06 203519" src="https://github.com/user-attachments/assets/ca0f04b5-7b6b-4b54-8408-31ffecbc8dea" />
 
 
 ---
