@@ -97,6 +97,9 @@ We lose 2 IPs each time — one for **Network** and one for **Broadcast**.
 | Hosts per Subnet | 2ʰ - 2 | h = bits left for host |
 | Subnet Increment | 256 - last octet value | 256 - 192 = 64 |
 
+<img width="1880" height="682" alt="Screenshot 2025-12-06 205631" src="https://github.com/user-attachments/assets/59208540-547e-4fae-9e5f-90bfd170d0c8" />
+
+
 ---
 
 
