@@ -1,4 +1,4 @@
-<img width="952" height="579" alt="Screenshot 2025-12-06 160301" src="https://github.com/user-attachments/assets/bcbece79-2185-4de2-990e-94d07be5fd5a" /># VPNs and Tunneling Concepts
+# VPNs and Tunneling Concepts
 
 **VPN** - 
 
