@@ -56,6 +56,12 @@ This helps you understand if the network is healthy or if there is a failure som
 - If a device is online
 - If the path is slow or unstable
 - Where a network issue might be happening
+
+**Ping Command**
+```
+ping 192.168.1.1
+ping google.com
+```
   
 ----------------------------------------------------------------------------
 
@@ -118,6 +124,12 @@ Traceroute is important because it tells you exactly where your network problem 
 
 - **If one hop has very high delay** → that router is overloaded, slow, or far away.
 
+**Tracert Command**
+```
+tracert 192.168.1.1
+tracert google.com
+```
+
 -------------------------------------------------------------------------
 
 ## 3. **Telnet – Test Remote Port Connection**
@@ -164,6 +176,12 @@ While tools like ping check basic connectivity, Telnet goes deeper and tells you
 
 - **If the device doesn’t respond at all** → there may be a network or configuration problem.
 
+**Telnet Command**
+```
+telnet 192.168.1.1
+telnet google.com
+```
+
 ----------------------------------------------------------------
 
 ## 4. **SSH – Secure Remote Access**
@@ -203,6 +221,12 @@ SSH is important because it gives you security + convenience at the same time.
 - You can manage devices from anywhere in the world
 - It protects sensitive network operations
 - It replaces old, unsafe methods like Telnet
+
+**SSH Command**
+```
+ssh -l username 8.8.8.8
+Password: cisco123
+```
 
 -------------------------------------------------------------------------
 
