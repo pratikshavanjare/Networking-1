@@ -147,8 +147,13 @@ where RIP select paths only uses Hop count, it can't able to find the best path 
 
 - Divide large networks into multiple areas to control LSA flooding.
 
+<img width="1422" height="602" alt="image" src="https://github.com/user-attachments/assets/41b64ed9-07a8-4602-bc1d-747ded069916" />
+ 
+
+
 #### Reference [Day 1](https://claude.ai/public/artifacts/fbf70cac-6f1a-41cf-adcc-6336e3136ab5?fullscreen=true)
----
+
+------------------------------------------------------------------------
 
 
 
@@ -234,6 +239,8 @@ route)
    - ACK packets are simple acknowledgements.
    - They confirm that an Update or Reply was received.
    - They look like empty Hello packets.
+
+<img width="1540" height="626" alt="Screenshot 2025-12-06 203745" src="https://github.com/user-attachments/assets/68c8230f-28dd-4965-9d3a-7ebdd9e72557" />
 
 
 
@@ -335,5 +342,9 @@ Because BGP selects routes based on policies rather than real-time performance, 
 **5. iBGP scalability issues → Use hierarchical designs**
 
 A full mesh of iBGP peers doesn’t scale well as networks grow, so hierarchical designs are used to make management easier. Route reflectors allow some routers to act as central points for iBGP updates, removing the need for every router to connect to every other one. Another solution is to use confederations, which break a large AS into smaller internal ASes to improve organization and scalability. These designs help large ISPs and enterprises manage BGP more efficiently.
+
+<img width="1244" height="608" alt="image" src="https://github.com/user-attachments/assets/3173b586-4a42-4882-8eb1-8159e1336502" />
+
+
 
 #### Reference [Day 3](https://claude.ai/public/artifacts/819e1cd3-57ee-4398-9446-513c3cce9597)
