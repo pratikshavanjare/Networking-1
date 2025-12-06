@@ -36,18 +36,33 @@ These are the programs & rules that control how the network works. we can't touc
 It shows that how computers and devices are connected to each other in a network.
 There are 4 types of topologies -
 
-1. BUS Topology - All computers or devices are connected to single cable, Simple but prone to failure. Example - Old Ethernet networks 
+1. **BUS Topology** - All computers or devices are connected to single cable, Simple but prone to failure. Example - Old Ethernet networks 
    Pros - We can modify and extend cable easily.
    Cons - Until one device finishes sending data, others must wait. If two send together, their data can crash into each other.
-2. RING Topology - Devices will connect in a circle, Devices from a circular connection & data will travel in one direction. Example - Metro Networks.
+
+<img width="608" height="491" alt="image" src="https://github.com/user-attachments/assets/f8e891c6-6b1a-4d8c-93ca-b1ce8580d7d5" />
+
+
+2. **RING Topology** - Devices will connect in a circle, Devices from a circular connection & data will travel in one direction. Example - Metro Networks.
    Pros - data will sentin the form of Token.
    Cons - If one fails or down or cannot send the message then whole network  will down.
-3. STAR Topology - All devices connect to one central device. Example - Most common in homes & Offices.
+
+   <img width="562" height="542" alt="image" src="https://github.com/user-attachments/assets/f219d871-18c7-4776-9752-928b4b57a856" />
+
+
+3. **STAR Topology** - All devices connect to one central device. Example - Most common in homes & Offices.
    Pros - We can send data from any node to any other node in the network.
    Cons - If central hub downs then whole  network will destroy.
-4. MESH Topology - Every device is connected to every other device . so there will be multiple paths between devices. Example - Millitary communication Network.
+
+<img width="823" height="590" alt="image" src="https://github.com/user-attachments/assets/8fff37ac-fed0-4885-8459-f0e537f95f95" />
+
+   
+4. **MESH Topology** - Every device is connected to every other device . so there will be multiple paths between devices. Example - Millitary communication Network.
    Pros - It always establish a connection between two nodes (point to point connection).
    Cons - It is difficult for installation & Configuration, It is expensive as well.
+
+<img width="732" height="627" alt="image" src="https://github.com/user-attachments/assets/5a4f2e50-3290-43a2-9660-7827779855fb" />
+
 
 ### Importance of Networking in IT 
 
@@ -70,7 +85,10 @@ We learnt Types of Networking(LAN, MAN & WAN) in detail -
    **Use** - It is used for connecting computers & devices in one buiding.
     **Common Technologies** - LAN mostly uses Ethernet cables or Wi-Fi to connect nearby devices.
 
-3. **MAN** :
+<img width="707" height="477" alt="image" src="https://github.com/user-attachments/assets/6d16549d-a607-46c0-b0f2-98c8890d4204" />
+
+
+2. **MAN** :
    **Fullform** - Metropoliton Area Network
    **Distance** - 5-50km
    **Geographical Area** - Medium area — like a city or large campus.
@@ -79,7 +97,10 @@ We learnt Types of Networking(LAN, MAN & WAN) in detail -
    **Use** - It is used for may LAN'S within one city.
    **Common Technologies** - MAN uses high-speed fiber or wireless links to connect networks across a city.
 
-4. **WAN** :
+<img width="623" height="492" alt="image" src="https://github.com/user-attachments/assets/a42f77eb-2529-409b-94e4-e5d81bfbf8ad" />
+
+
+3. **WAN** :
    **Fullform** - Wide Area Network
    **Distance** - Unlimited
    **Geographical Area** - Large area — across countries or the whole world.
@@ -87,6 +108,8 @@ We learnt Types of Networking(LAN, MAN & WAN) in detail -
    **Example** - The Internet, bank branch networks.
    **Use** - It is used for connecting many LAN's * MAN's together.
    **Common Technologies** - WAN connects countries or continents using satellite or long-distance Internet lines.
+
+<img width="876" height="557" alt="image" src="https://github.com/user-attachments/assets/adf563cd-d1c6-4664-adf3-1e6d3475438f" />
 
 
 #### Let's Pratice with few questions -
@@ -103,8 +126,11 @@ Your Task:
 Design a network architecture plan identifying:
 
 What type of network for main office? (LAN/MAN/WAN) - **LAN**
+
 How to connect development center? (LAN/MAN/WAN) - **MAN**
+
 How to connect regional offices? (LAN/MAN/WAN) - **WAN**
+
 How to support remote workers? (LAN/MAN/WAN) - **WAN**
 
 
