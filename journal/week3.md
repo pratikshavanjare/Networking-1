@@ -11,6 +11,7 @@ Because of this, the network is faster and safer compared to using a hub, which 
 A Layer 2 (L2) switch is like a smart helper inside a single network (like an office LAN). It looks at the MAC addresses of devices—basically their unique ID cards—to decide where to send the data. So if one computer wants to talk to another, the L2 switch delivers the message directly, making the network fast and efficient.
 
 Limitations: The L2 switch only works within the same network. It can’t send data to another network—that’s a job for a router.
+
 ---
 
 ##  Layer 3 (L3) Switch
@@ -22,6 +23,9 @@ Basically, an L3 switch combines the speed of a normal Layer 2 switch with the a
  **Use case:**  
 - A **Layer 3 switch** is used in large networks to provide **fast communication within a network** and **routing between different networks**, combining the roles of a switch and a router in one device.
 ---
+
+<img width="770" height="526" alt="Screenshot 2025-12-06 201525" src="https://github.com/user-attachments/assets/487e09e4-b9c0-47bf-a892-ad8ac95ade28" />
+
 
 ## Comparison between L2 & L3
 
@@ -82,6 +86,9 @@ Devices in VLAN 10 cannot directly talk to devices in VLAN 20 without routing.
 VLAN tagging is the process of adding a small identifier (tag) inside an Ethernet frame.
 This tag tells switches which VLAN the frame belongs to, allowing multiple VLANs to travel over the same physical connection.
 
+<img width="1382" height="753" alt="image" src="https://github.com/user-attachments/assets/98227500-6275-4101-aed8-171feb9e16fb" />
+
+
 -------------------------------------------------------------
 
 ## Trunk
@@ -92,6 +99,10 @@ This tag tells switches which VLAN the frame belongs to, allowing multiple VLANs
 ### Example:
 - Switch A (VLAN 10, VLAN 20) ↔ **Trunk Link** ↔ Switch B (VLAN 10, VLAN 20)  
 - The trunk link carries both VLANs' traffic between the switches.
+
+
+<img width="1065" height="475" alt="Screenshot 2025-12-06 202008" src="https://github.com/user-attachments/assets/1a7fc8c5-adbf-4b3b-9cfd-52104eb00104" />
+
 
 ------------------------------------------------
 
@@ -154,6 +165,7 @@ Backup paths stay in a blocking/standby state.
 This prevents loop formation while still keeping redundancy.
 
 
+<img width="553" height="501" alt="image" src="https://github.com/user-attachments/assets/1e8eac91-8818-48e3-bff7-7b76c59886e9" />
 
 
 ---
