@@ -57,7 +57,7 @@ Network Part + Host Part
 - **Host Part** → tells which specific device inside that network  
 
 Example:  
-`192.168.1.10` →  
+`192.168.1.10` → IP Address
 `192.168.1` = network part  
 `10` = host part
 
