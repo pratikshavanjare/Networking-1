@@ -80,8 +80,6 @@ Think of it like this: You want to send a letter (your original data), so you pu
 
 **Types of Tunneling**
 
-
-
 **1. PPTP (Point-to-Point Tunneling Protocol)**
 
 Works at Layer 2 (Data Link) and uses TCP 1723.
@@ -121,6 +119,9 @@ Pros: Very secure, encrypted, flexible for port forwarding.
 Cons: Limited protocol support, not a full VPN.
 
 Use Case: Secure remote access or forwarding specific ports.
+
+<img width="1532" height="766" alt="image" src="https://github.com/user-attachments/assets/ea760a71-db54-4050-99a9-f010f113aef8" />
+
 
 
 
