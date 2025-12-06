@@ -58,7 +58,7 @@ LEASE RENEWAL PROCESS-
 BENEFITS - It is efficient to reuse and flexible for mobile devices.
 
 ![DHCP Lab](https://github.com/pratikshavanjare/Networking-1/blob/e821357ac79eb612a96d09e526e8a329e98601eb/Media/DHCP%20Image.png)
-#### Reference [Day 13](https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c)
+#### Reference [Day 1](https://claude.ai/public/artifacts/cab20ca6-7445-4439-880e-78db376be78c)
 
 
 -----------
@@ -118,4 +118,4 @@ Benifits of PAT are it allows many devices for sharing one public IP address, co
 5. Testing & Developemnt - They canuse to simulate production networks with different addressing schemes.
    
 ![NAT-PAT](https://github.com/pratikshavanjare/Networking-1/blob/cf507db41f7a88f30f5c7480aaa046deac9bd80e/Media/NAT-PAT.png)
-#### Reference [Day 14](https://claude.ai/public/artifacts/553de791-6828-4740-becf-0fb4af7e53b7)
+#### Reference [Day 2](https://claude.ai/public/artifacts/553de791-6828-4740-becf-0fb4af7e53b7)
