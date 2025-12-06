@@ -1,4 +1,4 @@
-# VPNs and Tunneling Concepts
+<img width="952" height="579" alt="Screenshot 2025-12-06 160301" src="https://github.com/user-attachments/assets/bcbece79-2185-4de2-990e-94d07be5fd5a" /># VPNs and Tunneling Concepts
 
 **VPN** - 
 
@@ -59,3 +59,79 @@ Second is after the setup, a secure tunnel formed between two offices. This tunn
 Third is the vpn protects the tunnel using encryption and it checks that both sides are trusted. This keeps the connection safe
 Now, when one office send data it goes through this protected tunnel, so no one else can see it
 In the end, both offices can share their files, servers, and applications just like they are in the same building
+
+------------------------------------------------------------------------------------------
+
+
+**Tunneling**
+
+Tunneling is a method of sending data across a network that may not support the original protocol by wrapping the data inside a supported protocol.
+
+Think of it like this: You want to send a letter (your original data), so you put it in an envelope (encapsulation), and then put the envelope in a package (outer protocol) for shipping. At the destination, the package is opened, then the envelope, and finally the letter is read.
+
+**How Tunneling Works**
+
+**Encapsulation:** Original data packet is wrapped with a tunnel header, sometimes encrypted.
+
+**Transport:** Encapsulated packet travels securely through the network.
+
+**Decapsulation:** At the destination, the tunnel header is removed, and the original data is delivered.
+
+
+**Types of Tunneling**
+
+
+
+**1. PPTP (Point-to-Point Tunneling Protocol)**
+
+Works at Layer 2 (Data Link) and uses TCP 1723.
+
+Pros: Very easy to set up, fast, comes built into many operating systems.
+
+Cons: Old, weak security, vulnerable to attacks.
+
+Note: Not suitable for sensitive data.
+
+**2. GRE (Generic Routing Encapsulation)**
+
+Works at Layer 3 (Network).
+
+Pros: Lightweight, supports multicast, simple to use.
+
+Cons: No encryption by default, usually combined with IPSec for security.
+
+Use Case: Often used for site-to-site VPNs.
+
+**3. L2TP (Layer 2 Tunneling Protocol)**
+
+Works at Layer 2 (Data Link), uses UDP 1701.
+
+Pros: Secure when combined with IPSec, widely supported.
+
+Cons: Double encapsulation makes it slightly slower.
+
+Use Case: L2TP/IPSec VPN for secure connections.
+
+**4. SSH Tunneling**
+
+Works at Layer 7 (Application), uses TCP 22.
+
+Pros: Very secure, encrypted, flexible for port forwarding.
+
+Cons: Limited protocol support, not a full VPN.
+
+Use Case: Secure remote access or forwarding specific ports.
+
+
+
+| Feature        | VPN                                                                                        | Tunneling                                                            |
+| -------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
+| **Definition** | Complete solution for secure network access; encrypts, authenticates, and protects traffic | Method of sending data across networks by encapsulating it           |
+| **Scope**      | Broad: includes encryption, authentication, and secure access                              | Specific: only encapsulates data for transport                       |
+| **Security**   | End-to-end encryption and authentication ensure safety and privacy                         | Depends on protocol; may or may not be encrypted                     |
+| **Purpose**    | Creates a secure private network over the internet                                         | Allows data to travel across networks that don’t normally support it |
+| **Components** | Combines tunneling, encryption, and authentication                                         | Only encapsulation, no extra security unless added                   |
+| **Analogy**    | An armored vehicle traveling on a highway                                                  | The highway itself that carries the vehicle                          |
+
+
+#### Reference [Day 1](https://claude.ai/public/artifacts/a40f8498-55f3-4a59-aa79-6ec64d843462)
