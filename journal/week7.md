@@ -46,7 +46,7 @@ It will do the same thing controlling network traffic but more precisely. It wil
 - It always usually placed near to the Source.
 - It is used only when you want to block or allow specific protocol or port on a network.
 
-#### Reference [Day 15](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823)
+#### Reference [Day 1](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823)
 
 ----------------
 
@@ -97,7 +97,7 @@ Switches can forward frames in different ways:
 | **Fragment-Free** | A balance between both — it checks the first 64 bytes for errors before forwarding. |
 
 ---
-#### Reference [Day 16](https://claude.ai/public/artifacts/c07e6c2a-f9ae-4abd-a263-adb67b666bc9)
+#### Reference [Day 2](https://claude.ai/public/artifacts/c07e6c2a-f9ae-4abd-a263-adb67b666bc9)
 
 -------------------------
 
@@ -168,6 +168,6 @@ It is called “broadband” because it can carry a large amount of data at once
 - Supports multiple users and devices.  
 - Suitable for remote work and small offices.
 
-#### Reference [Day 17](https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43)
+#### Reference [Day 3](https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43)
 ---
 
