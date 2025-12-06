@@ -58,6 +58,9 @@ It’s basically a step-by-step guide for how devices talk to each other.
      Provides services: Makes it possible for applications to communicate over the network.
      Examples: HTTP/HTTPS (web pages), SMTP (email), FTP (file transfer), XMPP (messaging).
 
+<img width="1277" height="710" alt="Screenshot 2025-12-06 200314" src="https://github.com/user-attachments/assets/60d3136e-9a24-4167-b1b0-30978b6280b0" />
+
+
 #  OSI Model in Real-Life Examples  
 
 ## 1. WhatsApp  
@@ -103,6 +106,10 @@ The TCP/IP model is like the set of rules that helps computers “talk” to eac
 - **Internet Layer:** Sends data across multiple networks by breaking it into packets, assigning addresses, and finding the best route to the destination.
 
 - **Network Access Layer:** Manages the actual sending and receiving of data over physical hardware like cables, switches, and network cards, turning data into signals for transmission.
+
+
+<img width="1027" height="701" alt="Screenshot 2025-12-06 201203" src="https://github.com/user-attachments/assets/76eddf67-3ebe-4118-9986-377c8c21a015" />
+
 
 ----------------------------------------------------------------------------------
 
