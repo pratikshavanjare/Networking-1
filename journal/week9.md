@@ -1,5 +1,3 @@
-## DAY 18
-
 # Subnetting & CIDR
 
 
@@ -182,45 +180,104 @@ So `/26` means:
 ---
 
 
+# Router Redundancy(HSRP, VRRP, and GLBP) 
 
+When you connect your laptop or phone to Wi-Fi, one main router gives you internet.
+But what if that router suddenly stops working?
+Everything at home, office, or company will go offline instantly.
 
+To avoid such disasters, networks use Router Redundancy Protocols.
+These protocols allow two or more routers to work together like a team.
+If the main router fails, another router takes over automatically—within seconds.
 
-# HSRP, VRRP, and GLBP
+It keeps the internet alive, stable, and non-stop.
 
 ## 1. HSRP (Hot Standby Router Protocol)
-**Definition:**  
-HSRP is a Cisco proprietary protocol that provides gateway redundancy. It ensures if one router fails, another router automatically becomes the gateway.
 
-**Key Points:**
-- Cisco proprietary
-- One router = Active
-- Second router = Standby
-- Uses a Virtual IP
-- Standby takes over if Active fails
+**Characteristics of HSRP**
+
+- Cisco-only protocol
+- Uses one Active router and one Standby router
+- Uses a virtual IP so users do not know which router is active
+- Provides fast failover when the active router fails
+- Priority decides which router becomes Active
+
+**How It Works**
+
+HSRP chooses one router to carry all the traffic (Active), while another router silently waits as a backup (Standby). The standby router keeps checking if the active router is healthy. If the active router shuts down or stops responding, the standby router instantly becomes the new active router. Because all users connect using the same virtual IP, the change happens smoothly and nobody notices that a different router took over.
+
+**Example**
+
+Imagine Router R1 and R2.
+Virtual IP: 192.168.1.1
+
+- R1 → Active router
+- R2 → Standby router
+
+All PCs use 192.168.1.1 as the gateway.
+If R1 fails, R2 immediately becomes Active.
+Internet continues without any interruption.
+
+All the computers in the network use the same gateway address, 192.168.1.1, which is the virtual IP. Behind this virtual IP, Router R1 is the Active router, meaning it is doing all the work and handling the internet traffic. Router R2 is the Standby router, quietly waiting and continuously checking if R1 is okay. If R1 suddenly stops working, R2 instantly takes over as the new Active router. The switch is so smooth that the internet keeps working without any break or interruption for users.
 
 ---
 
 ## 2. VRRP (Virtual Router Redundancy Protocol)
-**Definition:**  
-VRRP is an open standard protocol that also provides gateway redundancy using a shared virtual IP. If the master router fails, a backup router takes over.
 
-**Key Points:**
-- Open standard (multi-vendor)
-- One router = Master
-- Others = Backup
-- Uses Virtual IP
-- Backup becomes Master when needed
+**Characteristics of VRRP**
+
+- Open standard (works on all brands: Cisco, Huawei, Juniper, MikroTik, etc.)
+- One Master router, others become Backup routers
+- Uses virtual IP for a single gateway
+- Automatic switchover from Master to Backup
+- Priority decides the Master router
+
+**How It Works**
+
+VRRP selects a Master router that handles traffic. Other routers remain as Backups, constantly monitoring the Master. If the Master fails, the Backup router with the highest priority immediately takes over as the new Master. Since devices use the same virtual IP, they continue working without realizing that a router has failed.
+
+**Example**
+
+Routers: R1, R2, R3
+Virtual IP: 10.10.10.1
+
+- R1 → Master
+- R2 & R3 → Backup
+
+If R1 fails, R2 becomes Master automatically.
+Network remains stable even during router failure.
+
+All computers in the network use the same virtual IP address (10.10.10.1) as their gateway. Behind that gateway, Router R1 is the Master, which means it is currently handling all the traffic. Routers R2 and R3 are Backup routers, quietly watching R1 to make sure it’s working properly. If R1 suddenly stops working, VRRP automatically makes R2 the new Master. The switch happens instantly, so the network continues running smoothly, and users don’t even notice that a router failed.
 
 ---
 
 ## 3. GLBP (Gateway Load Balancing Protocol)
-**Definition:**  
-GLBP is a Cisco proprietary protocol that provides both load balancing and redundancy. Multiple routers can forward traffic simultaneously.
 
-**Key Points:**
-- Cisco proprietary
-- Load balancing + redundancy
-- One router = AVG (Active Virtual Gateway)
-- Multiple routers = AVF (Active Virtual Forwarders)
-- Traffic is shared across routers
+**Characteristics of GLBPP**
 
+- Cisco-only protocol
+- Multiple routers work actively at the same time
+- Supports load balancing (traffic shared among routers)
+- Still provides redundancy if one router fails
+- Each router gets a different virtual MAC address
+
+**How It Works**
+
+GLBP allows many routers to forward traffic together. Instead of a single active router, all routers share the load by dividing users among themselves. One router acts as the AVG (Active Virtual Gateway) and assigns different routers as AVFs (Active Virtual Forwarders). If one router goes down, the others automatically take over its users. This improves performance and provides both speed and reliability.
+
+**Example**
+
+Routers: R1, R2, R3
+Virtual IP: 192.168.100.1
+
+GLBP divides users:
+- Some PCs → R1
+- Some PCs → R2
+- Some PCs → R3
+
+If R2 fails, R1 and R3 handle all its users.
+Traffic keeps flowing smoothly and fast.
+
+GLBP uses one virtual IP (192.168.100.1) so all computers connect through the same gateway. Behind the scenes, it divides users between three routers — some go to R1, some to R2, and some to R3. This keeps the network fast because the work is shared. If R2 suddenly stops working, the users that were using R2 are automatically shifted to R1 and R3. The internet keeps running smoothly, and nobody notices the router failure.
+
+------------------------------------------------------------------------
