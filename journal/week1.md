@@ -1,24 +1,26 @@
-# Day 1
+#  Day 1
+
 ## Introduction to Networking
-Networking is basically about how computer and devices connect with each other to share data & resources.
-For example, when your laptop connects to wi-fi, it's part of a network that lets it talk to other devices and the internet.
+
+   Networking is basically about how computer and devices connect with each other to share data & resources.
+   For example, when your laptop connects to wi-fi, it's part of a network that lets it talk to other devices and the internet.
 
 
 ### Types of Network
-There are 4 types of network which are below -
+  There are 4 types of network which are below -
 
-1. PAN(Personal Area Network) : Connects devices around one person, like mobile and laptop connectivity to earbuds.
-2. LAN(Local Area Network) : Connects computers within a small area like home, school or all computer in office sharing a printer. 
-3. MAN(Metropoliton Area Network) : Connects multiple LANs across a city or large campus.
-4. WAN(Wide Area Network) : Connects networks across countries — like the Internet.
+1. P**AN(Personal Area Network)** : Connects devices around one person, like mobile and laptop connectivity to earbuds.
+2. **LAN(Local Area Network)** : Connects computers within a small area like home, school or all computer in office sharing a printer. 
+3. **MAN(Metropoliton Area Network)** : Connects multiple LANs across a city or large campus.
+4. **WAN(Wide Area Network)** : Connects networks across countries — like the Internet.
 
 
 ### Network Components
 
-There are two main types of components in networking:
+   There are two main types of components in networking:
 
 ###  1. Hardware Components
-These are the physical parts of a network, they help in connecting,sending and recieving data. like - Routers,Hub, Switches, Server, Firewall etc.
+   These are the physical parts of a network, they help in connecting,sending and recieving data. like - Routers,Hub, Switches, Server, Firewall etc.
 
 **Hardware is further divided into:**
 - **End Devices** – These are the devices that people use to send or receive data. These are the source & destination points of communication. It is mainlyl used by users (like Computer, Laptop, Mobile)
