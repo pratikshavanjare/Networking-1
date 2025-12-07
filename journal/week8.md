@@ -230,7 +230,7 @@ Password: cisco123
 
 -------------------------------------------------------------------------
 
-## 🧾 **Tool Comparison Table**
+## **Tool Comparison Table**
 
 | Tool | Purpose | Protocol | Secure | Common Port |
 |------|----------|-----------|---------|--------------|
