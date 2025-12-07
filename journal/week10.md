@@ -34,16 +34,16 @@ A firewall works just like a security guard standing at the gate of your network
 Every piece of data that tries to enter or leave is treated like a visitor at the gate.
 
 1. **Checks every network packet**
-The firewall examines each packet one by one, making sure it knows exactly what type of data is coming in or going out.
+    The firewall examines each packet one by one, making sure it knows exactly what type of data is coming in or going out.
 
 2. **Compares it with firewall rules**
-It then checks the packet against a set of security rules—just like a guard checking a visitor list to see who’s allowed.
+   It then checks the packet against a set of security rules—just like a guard checking a visitor list to see who’s allowed.
 
 3. **Allows safe packets**
-If the packet matches the allowed list and looks safe, the firewall lets it pass through without delay.
+   If the packet matches the allowed list and looks safe, the firewall lets it pass through without delay.
 
 4. **Blocks suspicious packets**
-If something looks risky, unknown, or violates the rules, the firewall immediately stops the packet to protect the network.
+   If something looks risky, unknown, or violates the rules, the firewall immediately stops the packet to protect the network.
 
 ---
 
@@ -51,31 +51,33 @@ If something looks risky, unknown, or violates the rules, the firewall immediate
 
 1. **Packet Filtering Firewall**
 
-- Acts like a basic gatekeeper that looks at the IP address, port number, and protocol of each packet.
+   - Acts like a basic gatekeeper that looks at the IP address, port number, and protocol of each packet.
 
-- Fast and simple, but only checks the header, so it can’t see deeper into the data.
+   - Fast and simple, but only checks the header, so it can’t see deeper into the data.
 
 2. **Stateful Firewall**
 
-- Remembers active connections, so it knows which packets belong to an ongoing session.
+   - Remembers active connections, so it knows which packets belong to an ongoing session.
 
-- Safer than packet filtering because it can track traffic context, not just individual packets.
+   - Safer than packet filtering because it can track traffic context, not just individual packets.
 
 3. **Proxy Firewall**
 
-- Works like a middle-man between your network and the internet.
+   - Works like a middle-man between your network and the internet.
 
-- Hides the real IP addresses of your devices, making it harder for attackers to target your network.
+   - Hides the real IP addresses of your devices, making it harder for attackers to target your network.
 
 4. **Next-Generation Firewall**
 
-- Goes beyond basic filtering, inspecting the content of packets deeply.
+   - Goes beyond basic filtering, inspecting the content of packets deeply.
 
-- Can identify applications, block advanced threats, and stop malicious activity before it reaches your network. 
+   - Can identify applications, block advanced threats, and stop malicious activity before it reaches your network. 
 
 --------------------------------------------------------
 
 # Router Redundancy (HSRP, VRRP, GLBP)
+
+A network setup where multiple routers or paths ensure continuous connectivity if one router or link fails.
 
 A router in a company like DXC Technology works just like an IT coordinator who handles all employee requests. When DXC employees open client websites, access internal tools, join Teams meetings, or download project files, all their requests go to the router first. The router decides the correct and fastest path—whether the data should go to a client server, DXC’s internal network, or the internet. It then brings the response back to the right employee’s laptop without mixing anything up. Just like an IT coordinator keeps work smooth and organized inside DXC, the router keeps all network traffic flowing safely and efficiently.
 
@@ -95,8 +97,8 @@ HSRP is like having a backup router always ready, so your network never goes dow
 Imagine DXC Technology is managing a client’s data center.
 They use two edge routers for internet connectivity:
 
-- Router 1 – Active
-- Router 2 – Standby (HSRP backup)
+- **Router 1** – Active
+- **Router 2** – Standby (HSRP backup)
 
 Both routers share a virtual IP, which employees use as their default gateway.
 
@@ -117,19 +119,19 @@ Employees continue using applications, cloud services, and VPN without any downt
 
 ### How it works?
 
-**1. Virtual IP Setup:** Multiple routers share a single virtual IP as the network’s gateway.
+**1. Virtual IP Setup -** Multiple routers share a single virtual IP as the network’s gateway.
 
-**2. Router Roles:**
+**2. Router Roles -**
 
 Active Router: Handles all traffic.
 
-**3. Standby Router:** Waits to take over if active fails.
+**3. Standby Router -** Waits to take over if active fails.
 
-**4. Hello Messages:** Routers send periodic “hello” packets to check the active router’s status.
+**4. Hello Messages -** Routers send periodic “hello” packets to check the active router’s status.
 
-**5. Failover:** If the active router fails, the standby router automatically becomes active.
+**5. Failover -** If the active router fails, the standby router automatically becomes active.
 
-**6. Seamless Traffic:** Devices continue using the same virtual IP, ensuring uninterrupted network access.
+**6. Seamless Traffic -** Devices continue using the same virtual IP, ensuring uninterrupted network access.
 
 <img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/6db44d8a-839b-4871-96fd-e76662d275b5" />
 
@@ -203,7 +205,7 @@ At DXC, employees’ systems use virtual gateway 10.0.0.1.
 - Router R2 handles others
 
 - Router R3 handles the rest
-If R2 fails, R1 and R3 automatically take over its traffic, so everyone keeps working without interruption.
+  If R2 fails, R1 and R3 automatically take over its traffic, so everyone keeps working without interruption.
 
 ### Characteristics
 
