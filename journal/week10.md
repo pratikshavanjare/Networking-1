@@ -33,16 +33,16 @@ A firewall keeps track of who is connecting, what they’re doing, and where the
 A firewall works just like a security guard standing at the gate of your network.
 Every piece of data that tries to enter or leave is treated like a visitor at the gate.
 
-1. **Checks every network packet**
+1. **Checks every network packet** - 
     The firewall examines each packet one by one, making sure it knows exactly what type of data is coming in or going out.
 
-2. **Compares it with firewall rules**
+2. **Compares it with firewall rules** - 
    It then checks the packet against a set of security rules—just like a guard checking a visitor list to see who’s allowed.
 
-3. **Allows safe packets**
+3. **Allows safe packets** - 
    If the packet matches the allowed list and looks safe, the firewall lets it pass through without delay.
 
-4. **Blocks suspicious packets**
+4. **Blocks suspicious packets** - 
    If something looks risky, unknown, or violates the rules, the firewall immediately stops the packet to protect the network.
 
 ---
