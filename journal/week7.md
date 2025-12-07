@@ -9,15 +9,16 @@ ACL is stands for Access Control List and It is used as a rule in router or swit
 
 This will complete in 5 steps that are below -
 
-1. Packet Arrives - When a packet reaches the router, the ACL examines it.  
-2. Check Rule 1 - Router will check the packet's details - like source ip, destination ip, protocol or port.
-3. Check Rule 2 - The ACL compares the packet with its list of rules from top to bottom.  
-4. Check Rule 3 - According to the rule, if rule matches it will permit otherwise it will denied the packet.
-5. Implicit Deny All - If no rule matches, the packet is automatically denied.
+1. **Packet Arrives** - When a packet reaches the router, the ACL examines it.  
+2. **Check Rule 1** - Router will check the packet's details - like source ip, destination ip, protocol or port.
+3. **Check Rule 2** - The ACL compares the packet with its list of rules from top to bottom.  
+4. **Check Rule 3** - According to the rule, if rule matches it will permit otherwise it will denied the packet.
+5. **Implicit Deny All** - If no rule matches, the packet is automatically denied.
 
 ---
 
 ###  Example
+
 Suppose, we want to block on device from accessing our network for that we can use ACL rule to deny that IP and allow others.
 So, only traffic from allowed IPs will pass through the router interface.
 
@@ -33,7 +34,7 @@ It is used to allow or block traffic based only on the source IP address. It is 
 
 ##### Characteristics
 - It checks where data is coming from.
-- Number range : 1-99 and 1300-1999.
+- **Number range :** 1-99 and 1300-1999.
 - It always usually placed near to the destination.
 - It is used only when you want to block or allow entire network.
 
@@ -41,12 +42,12 @@ It is used to allow or block traffic based only on the source IP address. It is 
 It will do the same thing controlling network traffic but more precisely. It will use source IP as well as Destination IP, protocol and port number for filtering traffic.
 
 ##### Characteristics
-- Number Range : 100-199 and 2000-2699.
+- **Number Range :** 100-199 and 2000-2699.
 - It is more complex amd detailed traffic control.
 - It always usually placed near to the Source.
 - It is used only when you want to block or allow specific protocol or port on a network.
 
-<img width="1025" height="750" alt="image" src="https://github.com/user-attachments/assets/dc790b79-f845-460b-8a8b-ec627f13a324" />
+<img width="500" height="450" alt="image" src="https://github.com/user-attachments/assets/dc790b79-f845-460b-8a8b-ec627f13a324" />
 
 
 #### Reference [Day 1](https://claude.ai/public/artifacts/bd93a197-c4e7-4055-8fb8-244f36c6d823)
@@ -126,18 +127,19 @@ It helps in faster and more reliable data delivery.
 
 **How It Works:**
 These will complete ini 4steps -
-1. Label Assignment : Each data packet gets a label. 
-2. Label Switching : Routers use that label to forward data quickly — no need to check full IP routing tables.
-3. Fast Forwarding : The packet moves through the fastest path in the network.
-4. Label Removal : When the packet reaches its end point, the label is removed and data is delivered.
+1. **Label Assignment** : Each data packet gets a label. 
+2.** Label Switching** : Routers use that label to forward data quickly — no need to check full IP routing tables.
+3. **Fast Forwarding** : The packet moves through the fastest path in the network.
+4. **Label Removal** : When the packet reaches its end point, the label is removed and data is delivered.
 
-** Benefits of MPLS:**
+**Benefits of MPLS:**
+
 - Faster packet forwarding.  
 - Better **Quality of Service (QoS)** for voice, video, and real-time traffic.  
 - More reliable and secure than traditional Internet.  
 - Easy to create **private networks** for different offices.
 
-<img width="770" height="596" alt="Screenshot 2025-12-06 204618" src="https://github.com/user-attachments/assets/5c91c96f-aec4-4c93-9db2-a160a2a8c7b3" />
+<img width="500" height="450" alt="Screenshot 2025-12-06 204618" src="https://github.com/user-attachments/assets/5c91c96f-aec4-4c93-9db2-a160a2a8c7b3" />
 
 
 ---
@@ -154,7 +156,7 @@ A Leased Line is a private Internet connection between two places, like a compan
 - It stays connected 24/7, making it fast and reliable.
 - Used by banks and companies for safe data transfer.
 
-<img width="727" height="398" alt="Screenshot 2025-12-06 204750" src="https://github.com/user-attachments/assets/699c53dd-cb06-4cbc-baa6-3ec9630d8cc7" />
+<img width="500" height="400" alt="Screenshot 2025-12-06 204750" src="https://github.com/user-attachments/assets/699c53dd-cb06-4cbc-baa6-3ec9630d8cc7" />
 
 
 ---
@@ -177,7 +179,7 @@ It is called “broadband” because it can carry a large amount of data at once
 - Supports multiple users and devices.  
 - Suitable for remote work and small offices.
 
-<img width="1076" height="580" alt="Screenshot 2025-12-06 205209" src="https://github.com/user-attachments/assets/ea2f989b-df41-4441-8ec6-b26762be1ae0" />
+<img width="500" height="450" alt="Screenshot 2025-12-06 205209" src="https://github.com/user-attachments/assets/ea2f989b-df41-4441-8ec6-b26762be1ae0" />
 
 
 #### Reference [Day 3](https://claude.ai/public/artifacts/376a8e93-7bdb-4cc1-9ab0-057fe128fc43)
