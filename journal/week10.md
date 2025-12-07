@@ -122,7 +122,6 @@ Employees continue using applications, cloud services, and VPN without any downt
 **1. Virtual IP Setup -** Multiple routers share a single virtual IP as the network’s gateway.
 
 **2. Router Roles -**
-
 Active Router: Handles all traffic.
 
 **3. Standby Router -** Waits to take over if active fails.
