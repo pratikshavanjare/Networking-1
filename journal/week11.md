@@ -123,7 +123,12 @@ Think of it like this: You want to send a letter (your original data), so you pu
 <img width="1532" height="766" alt="image" src="https://github.com/user-attachments/assets/ea760a71-db54-4050-99a9-f010f113aef8" />
 
 
+
+
 <br>
+
+### Difference between VPN & Tunneling
+
 
 | Feature        | VPN                                                                                        | Tunneling                                                            |
 | -------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
