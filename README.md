@@ -33,10 +33,10 @@ This repository documents my **Networking Internship** experience, where I learn
 
 **Click Here to direct Access main Folders**
 
-- Lab Practice
-- https://github.com/pratikshavanjare/Networking-1/tree/7c0e7b891bb3836d1955994ed2b5b1506e6fa9b3/Media
-- https://github.com/pratikshavanjare/Networking-1/tree/7c0e7b891bb3836d1955994ed2b5b1506e6fa9b3/Troubleshooting-Commands
-- https://github.com/pratikshavanjare/Networking-1/tree/7c0e7b891bb3836d1955994ed2b5b1506e6fa9b3/journal
+- [Lab Practice](https://github.com/pratikshavanjare/Networking-1/tree/bca5614c0721d4c6599305d64f9bf33d8ba6f5da/Lab%20Practice)
+- [Media]https://github.com/pratikshavanjare/Networking-1/tree/7c0e7b891bb3836d1955994ed2b5b1506e6fa9b3/Media
+- [Troubleshhotin-Commands]https://github.com/pratikshavanjare/Networking-1/tree/7c0e7b891bb3836d1955994ed2b5b1506e6fa9b3/Troubleshooting-Commands
+- [Journal]https://github.com/pratikshavanjare/Networking-1/tree/7c0e7b891bb3836d1955994ed2b5b1506e6fa9b3/journal
 
  **Weekly Documentation**
  
