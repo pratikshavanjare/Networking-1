@@ -235,5 +235,5 @@ At DXC, employees’ systems use virtual gateway 10.0.0.1.
 7. **Seamless Network:** Users continue using the same gateway IP; no reconfiguration is needed.
 
 
-<img width="500" height="500" alt="image" src="https://github.com/user-attachments/assets/27f25b35-b861-4c0d-926e-72fd0ba0a23b" />
+<img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/27f25b35-b861-4c0d-926e-72fd0ba0a23b" />
 
