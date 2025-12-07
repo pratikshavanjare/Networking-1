@@ -1,4 +1,4 @@
-**Basic Networking Commands**
+# Basic Networking Commands
 
 Networking basics start with knowing a few simple commands. These help check your connection, IP details, and troubleshoot issues.
 
