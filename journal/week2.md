@@ -66,6 +66,7 @@ It’s basically a step-by-step guide for how devices talk to each other.
      - **Provides services:** Makes it possible for applications to communicate over the network.
      - **Examples:** HTTP/HTTPS (web pages), SMTP (email), FTP (file transfer), XMPP (messaging).
 
+    <br>
      <img width="700" height="650" alt="Screenshot 2025-12-06 200314" src="https://github.com/user-attachments/assets/60d3136e-9a24-4167-b1b0-30978b6280b0" />
 
 
