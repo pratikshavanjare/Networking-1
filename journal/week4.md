@@ -8,7 +8,7 @@ Whenever we open a website or send a message, that data doesn’t go in a straig
 You can think of it like Google Maps.
 Your data is like a car, the network cables are the roads, and the routers are the traffic signals or intersections. Just like Google Maps tells us the fastest route, routers use a routing table to guide the data to the correct destination.
 
-<img width="859" height="396" alt="Screenshot 2025-12-06 203246" src="https://github.com/user-attachments/assets/945dfc2a-7d85-44e1-9fd9-7cd8467b576d" />
+   <img width="450" height="450" alt="Screenshot 2025-12-06 203246" src="https://github.com/user-attachments/assets/945dfc2a-7d85-44e1-9fd9-7cd8467b576d" />
 
 
 ---
@@ -41,12 +41,14 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 ## Troubleshooting Steps
 
 ### 1. Static Routing Issues
+
 1. Check if the static route is entered correctly (IP, subnet mask, next-hop).  
 2. Verify connectivity with `ping` or `traceroute`.  
 3. Ensure the interface is **up**.  
 4. Look at the **routing table** to confirm the route exists.  
 
 ### 2. Dynamic Routing Issues
+
 1. Check if the routing protocol is enabled on the correct interfaces.  
 2. Verify neighbor/adjacency relationships (`show ip ospf neighbor`, `show ip eigrp neighbors`).  
 3. Check for mismatched configurations (like wrong area in OSPF, wrong AS in EIGRP).  
@@ -74,7 +76,7 @@ The only downside is that it uses more CPU and memory, and it’s a bit more com
 - Focuses on routing between multiple networks on the Internet.  
 - Example: **BGP (Border Gateway Protocol)**
 
-<img width="1035" height="761" alt="image" src="https://github.com/user-attachments/assets/ea6e24ea-898c-4c54-8981-a1dab05c6133" />
+     <img width="500" height="450" alt="image" src="https://github.com/user-attachments/assets/ea6e24ea-898c-4c54-8981-a1dab05c6133" />
 
 
 ---
@@ -147,7 +149,7 @@ updates.
 - Ensure no route loops exist  
 - Use `show ip route` and `debug ip rip` (in Cisco devices) for diagnosis  
 
-<img width="939" height="543" alt="Screenshot 2025-12-06 203519" src="https://github.com/user-attachments/assets/ca0f04b5-7b6b-4b54-8408-31ffecbc8dea" />
+     <img width="500" height="450" alt="Screenshot 2025-12-06 203519" src="https://github.com/user-attachments/assets/ca0f04b5-7b6b-4b54-8408-31ffecbc8dea" />
 
 
 ---
