@@ -184,7 +184,7 @@ If R1 fails, R2 instantly takes over, and employees continue working without not
 
 ---------------------------------------------------------------------------
 
-**1. GLBP (Hot Stand by Routing Protocol)** -  
+**1. GLBP (Gateway Load Balancing Protocol)** -  
 
 GLBP is like having multiple drivers sharing the same road, so traffic flows faster and no single driver is overloaded. In networking terms, it allows multiple routers to share a single virtual IP address while splitting traffic among them, instead of only one router handling everything.
 
