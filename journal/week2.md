@@ -1,6 +1,7 @@
 #  OSI Model (Open Systems Interconnection)
 
 ---
+
 The OSI Model is a simple way to understand how data moves across a network.
 It breaks the whole communication process into 7 layers, and each layer has its own job—like preparing data, sending it, receiving it, and making sure everything arrives safely.
 It’s basically a step-by-step guide for how devices talk to each other.
@@ -8,52 +9,56 @@ It’s basically a step-by-step guide for how devices talk to each other.
 ## The 7 Layers of the OSI Model
 
 1. **Physical Layer**
+
     Converts data into signals to transmit over physical media. Deals with hardware, cables, switches, and transmission of raw bits (0s and 1s). 
     Signal types:
-    Electrical → Copper cables
-    Light → Optical fiber
-    Radio → Air (wireless)
+    - Electrical → Copper cables
+    - Light → Optical fiber
+    - Radio → Air (wireless)
   
 2. **Data Link Layer**  
-    Converts data into frames: Organizes bits into structured chunks called frames.
-    Functions:
-    Framing: Packages bits into frames for sending.
-    MAC addressing: Identifies devices on the same network.
-    Error detection & correction: Ensures frames are received correctly.
-    Components: Header, Trailer, Sequence numbers
 
-3. **Network Layer**  
+    Converts data into frames: Organizes bits into structured chunks called frames.
+    **Functions -**
+    - Framing: Packages bits into frames for sending.
+    - MAC addressing: Identifies devices on the same network.
+    - Error detection & correction: Ensures frames are received correctly.
+    - Components: Header, Trailer, Sequence numbers
+
+4. **Network Layer**  
+
     Routes data from source → destination: Finds the best path for data across networks.
     Functions:
     Logical addressing: Uses IP addresses to identify devices.
     Routing: Chooses the most efficient path for data packets.
     Packet forwarding: Moves data from one network to another.
 
-4. **Transport Layer**  
+6. **Transport Layer**  
+
      Ensures reliable data transfer: Makes sure data arrives safely and in order.
-     Functions:
-     Segmentation: Breaks large data into smaller chunks for easier transport.
-     Flow Control: Prevents overwhelming the receiver; matches sending speed.
-     Error Control: Detects lost or corrupted data and requests retransmission.
-     Protocols:
-     TCP: Reliable, slower (guarantees delivery).
-     UDP: Fast, connectionless (used in streaming, gaming).
+     **Functions -**
+     - Segmentation: Breaks large data into smaller chunks for easier transport.
+     - Flow Control: Prevents overwhelming the receiver; matches sending speed.
+     - Error Control: Detects lost or corrupted data and requests retransmission.
+     **Protocols -**
+     - TCP: Reliable, slower (guarantees delivery).
+     - UDP: Fast, connectionless (used in streaming, gaming).
    
-5. **Session Layer**  
+8. **Session Layer**  
      Manages communication sessions: Keeps track of who is talking to whom.
      Functions:
      Start, maintain, and end sessions between devices.
      Authentication: Verify that the user or system is allowed to communicate.
      Authorization: Decide what the user is allowed to do.
 
-6. **Presentation Layer**  
+9. **Presentation Layer**  
      Translator between application & network: Converts data formats so computers understand each other.
      Functions:
      Translate: Convert from human-readable (text, video) to network-friendly binary data.
      Compress: Reduce file size so data moves faster (e.g., compress a 5MB video → 2MB).
      Encrypt: Secure data so only the intended recipient can read it. 
 
-7. **Application Layer**  
+10. **Application Layer**  
      Interacts directly with users: This is where you use websites, email, chat apps.
      Provides services: Makes it possible for applications to communicate over the network.
      Examples: HTTP/HTTPS (web pages), SMTP (email), FTP (file transfer), XMPP (messaging).
