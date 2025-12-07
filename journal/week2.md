@@ -12,58 +12,61 @@ It’s basically a step-by-step guide for how devices talk to each other.
 
     Converts data into signals to transmit over physical media. Deals with hardware, cables, switches, and transmission of raw bits (0s and 1s). 
     Signal types:
-    - Electrical → Copper cables
-    - Light → Optical fiber
-    - Radio → Air (wireless)
+    - **Electrical** → Copper cables
+    - **Light** → Optical fiber
+    - **Radio** → Air (wireless)
   
 2. **Data Link Layer**  
 
     Converts data into frames: Organizes bits into structured chunks called frames.
     **Functions -**
-    - Framing: Packages bits into frames for sending.
-    - MAC addressing: Identifies devices on the same network.
-    - Error detection & correction: Ensures frames are received correctly.
-    - Components: Header, Trailer, Sequence numbers
+    - **Framing:** Packages bits into frames for sending.
+    - **MAC addressing:** Identifies devices on the same network.
+    - **Error detection & correction:** Ensures frames are received correctly.
+    - **Components:** Header, Trailer, Sequence numbers
 
 4. **Network Layer**  
 
     Routes data from source → destination: Finds the best path for data across networks.
     Functions:
-    Logical addressing: Uses IP addresses to identify devices.
-    Routing: Chooses the most efficient path for data packets.
-    Packet forwarding: Moves data from one network to another.
+    - **Logical addressing:** Uses IP addresses to identify devices.
+    - **Routing:** Chooses the most efficient path for data packets.
+    - **Packet forwarding:** Moves data from one network to another.
 
 6. **Transport Layer**  
 
      Ensures reliable data transfer: Makes sure data arrives safely and in order.
      **Functions -**
-     - Segmentation: Breaks large data into smaller chunks for easier transport.
-     - Flow Control: Prevents overwhelming the receiver; matches sending speed.
-     - Error Control: Detects lost or corrupted data and requests retransmission.
+     **- Segmentation:** Breaks large data into smaller chunks for easier transport.
+     **- Flow Control:** Prevents overwhelming the receiver; matches sending speed.
+     **- Error Control:** Detects lost or corrupted data and requests retransmission.
      **Protocols -**
-     - TCP: Reliable, slower (guarantees delivery).
-     - UDP: Fast, connectionless (used in streaming, gaming).
+     **- TCP:** Reliable, slower (guarantees delivery).
+     **- UDP:** Fast, connectionless (used in streaming, gaming).
    
 8. **Session Layer**  
+
      Manages communication sessions: Keeps track of who is talking to whom.
-     Functions:
-     Start, maintain, and end sessions between devices.
-     Authentication: Verify that the user or system is allowed to communicate.
-     Authorization: Decide what the user is allowed to do.
+     **Functions -**
+     - Start, maintain, and end sessions between devices.
+     - **Authentication :** Verify that the user or system is allowed to communicate.
+     - **Authorization :** Decide what the user is allowed to do.
 
-9. **Presentation Layer**  
+10. **Presentation Layer**  
+
      Translator between application & network: Converts data formats so computers understand each other.
-     Functions:
-     Translate: Convert from human-readable (text, video) to network-friendly binary data.
-     Compress: Reduce file size so data moves faster (e.g., compress a 5MB video → 2MB).
-     Encrypt: Secure data so only the intended recipient can read it. 
+     **Functions:**
+     - **Translate:** Convert from human-readable (text, video) to network-friendly binary data.
+     - **Compress:** Reduce file size so data moves faster (e.g., compress a 5MB video → 2MB).
+     - **Encrypt:** Secure data so only the intended recipient can read it. 
 
-10. **Application Layer**  
+12. **Application Layer**  
+
      Interacts directly with users: This is where you use websites, email, chat apps.
-     Provides services: Makes it possible for applications to communicate over the network.
-     Examples: HTTP/HTTPS (web pages), SMTP (email), FTP (file transfer), XMPP (messaging).
+     - **Provides services:** Makes it possible for applications to communicate over the network.
+     - **Examples:** HTTP/HTTPS (web pages), SMTP (email), FTP (file transfer), XMPP (messaging).
 
-<img width="1277" height="710" alt="Screenshot 2025-12-06 200314" src="https://github.com/user-attachments/assets/60d3136e-9a24-4167-b1b0-30978b6280b0" />
+     <img width="700" height="650" alt="Screenshot 2025-12-06 200314" src="https://github.com/user-attachments/assets/60d3136e-9a24-4167-b1b0-30978b6280b0" />
 
 
 #  OSI Model in Real-Life Examples  
@@ -113,7 +116,7 @@ The TCP/IP model is like the set of rules that helps computers “talk” to eac
 - **Network Access Layer:** Manages the actual sending and receiving of data over physical hardware like cables, switches, and network cards, turning data into signals for transmission.
 
 
-<img width="1027" height="701" alt="Screenshot 2025-12-06 201203" src="https://github.com/user-attachments/assets/76eddf67-3ebe-4118-9986-377c8c21a015" />
+     <img width="700" height="650" alt="Screenshot 2025-12-06 201203" src="https://github.com/user-attachments/assets/76eddf67-3ebe-4118-9986-377c8c21a015" />
 
 
 ----------------------------------------------------------------------------------
