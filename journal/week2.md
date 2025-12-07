@@ -116,7 +116,9 @@ The TCP/IP model is like the set of rules that helps computers “talk” to eac
 - **Network Access Layer:** Manages the actual sending and receiving of data over physical hardware like cables, switches, and network cards, turning data into signals for transmission.
 
 
-     <img width="700" height="650" alt="Screenshot 2025-12-06 201203" src="https://github.com/user-attachments/assets/76eddf67-3ebe-4118-9986-377c8c21a015" />
+     <br>
+
+     <img width="700" height="600" alt="Screenshot 2025-12-06 201203" src="https://github.com/user-attachments/assets/76eddf67-3ebe-4118-9986-377c8c21a015" />
 
 
 ----------------------------------------------------------------------------------
