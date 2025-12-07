@@ -31,7 +31,12 @@ This repository documents my **Networking Internship** experience, where I learn
 
 ---
 
- Weekly Documentation
+**Click Here to direct Access main Folders**
+
+
+
+ **Weekly Documentation**
+ 
  1. [Week 1](journal/week1.md)
  2. [Week 2](journal/week2.md)
  3. [Week 3](journal/week3.md)
