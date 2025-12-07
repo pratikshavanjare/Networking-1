@@ -180,7 +180,7 @@ If R1 fails, R2 instantly takes over, and employees continue working without not
 
 **5. Seamless Network:** Devices continue using the same virtual IP, so network access remains uninterrupted.
 
-<img width="1880" height="682" alt="Screenshot 2025-12-06 205631" src="https://github.com/user-attachments/assets/c6649ab5-f0b6-485b-bd18-c3194b60795f" />
+<img width="881" height="748" alt="Screenshot 2025-12-07 095950" src="https://github.com/user-attachments/assets/93fc6c37-edcc-488a-85f5-360421f51955" />
 
 ---------------------------------------------------------------------------
 
