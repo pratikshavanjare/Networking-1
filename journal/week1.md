@@ -40,38 +40,38 @@ There are 4 types of topologies -
 
 1. **BUS Topology** - All computers or devices are connected to single cable, Simple but prone to failure. Example - Old Ethernet networks
    
-   **Pros** - We can modify and extend cable easily.
+   - **Pros** - We can modify and extend cable easily.
    
-   **Cons** - Until one device finishes sending data, others must wait. If two send together, their data can crash into each other.
+   - **Cons** - Until one device finishes sending data, others must wait. If two send together, their data can crash into each other.
 
-     <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/f8e891c6-6b1a-4d8c-93ca-b1ce8580d7d5" />
+      <img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/f8e891c6-6b1a-4d8c-93ca-b1ce8580d7d5" />
 
 
 2. **RING Topology** - Devices will connect in a circle, Devices from a circular connection & data will travel in one direction. Example - Metro Networks.
 
-    **Pros** - data will sentin the form of Token.
+    - **Pros** - data will sentin the form of Token.
  
-    **Cons** - If one fails or down or cannot send the message then whole network  will down.
+    - **Cons** - If one fails or down or cannot send the message then whole network  will down.
 
-     <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/f219d871-18c7-4776-9752-928b4b57a856" />
+      <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/f219d871-18c7-4776-9752-928b4b57a856" />
 
 
 4. **STAR Topology** - All devices connect to one central device. Example - Most common in homes & Offices.
 
-   **Pros** - We can send data from any node to any other node in the network.
+   - **Pros** - We can send data from any node to any other node in the network.
 
-   **Cons** - If central hub downs then whole  network will destroy.
+   - **Cons** - If central hub downs then whole  network will destroy.
 
-      <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/8fff37ac-fed0-4885-8459-f0e537f95f95" />
+       <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/8fff37ac-fed0-4885-8459-f0e537f95f95" />
 
    
 4. **MESH Topology** - Every device is connected to every other device . so there will be multiple paths between devices. Example - Millitary communication Network.
 
-   **Pros** - It always establish a connection between two nodes (point to point connection).
+   - **Pros** - It always establish a connection between two nodes (point to point connection).
 
-   **Cons** - It is difficult for installation & Configuration, It is expensive as well.
+   - **Cons** - It is difficult for installation & Configuration, It is expensive as well.
 
-      <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/a98929b1-6db7-4fdb-91da-75a1c57d9065" />
+       <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/a98929b1-6db7-4fdb-91da-75a1c57d9065" />
 
 
 ### Importance of Networking in IT 
@@ -107,27 +107,27 @@ We learnt Types of Networking(LAN, MAN & WAN) in detail -
 
 
 2. **MAN** :
-   **Fullform** - Metropoliton Area Network
-   **Distance** - 5-50km
-   **Geographical Area** - Medium area — like a city or large campus.
-   **High-Speed** - High (10mbps - 1gbps)
-   **Example** - City-wide Internet, college campus network.
-   **Use** - It is used for may LAN'S within one city.
-   **Common Technologies** - MAN uses high-speed fiber or wireless links to connect networks across a city.
+   - **Fullform** - Metropoliton Area Network
+   - **Distance** - 5-50km
+   - **Geographical Area** - Medium area — like a city or large campus.
+   - **High-Speed** - High (10mbps - 1gbps)
+   - **Example** - City-wide Internet, college campus network.
+   - **Use** - It is used for may LAN'S within one city.
+   - **Common Technologies** - MAN uses high-speed fiber or wireless links to connect networks across a city.
 
-      <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/a42f77eb-2529-409b-94e4-e5d81bfbf8ad" />
+       <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/a42f77eb-2529-409b-94e4-e5d81bfbf8ad" />
 
 
 3. **WAN** :
-   **Fullform** - Wide Area Network
-   **Distance** - Unlimited
-   **Geographical Area** - Large area — across countries or the whole world.
-   **High-Speed** - It has lower or variable speed (1mbps - 100gbps)
-   **Example** - The Internet, bank branch networks.
-   **Use** - It is used for connecting many LAN's * MAN's together.
-   **Common Technologies** - WAN connects countries or continents using satellite or long-distance Internet lines.
+   - **Fullform** - Wide Area Network
+   - **Distance** - Unlimited
+   - **Geographical Area** - Large area — across countries or the whole world.
+   - **High-Speed** - It has lower or variable speed (1mbps - 100gbps)
+   - **Example** - The Internet, bank branch networks.
+   - **Use** - It is used for connecting many LAN's * MAN's together.
+   - **Common Technologies** - WAN connects countries or continents using satellite or long-distance Internet lines.
 
-      <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/adf563cd-d1c6-4664-adf3-1e6d3475438f" />
+       <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/adf563cd-d1c6-4664-adf3-1e6d3475438f" />
 
 
 #### Let's Pratice with few questions -
@@ -135,7 +135,7 @@ We learnt Types of Networking(LAN, MAN & WAN) in detail -
 
 **Scenario:** You are IT consultant for "EduTech Solutions" - an educational software company.
 
-Company Details:
+**Company Details:**
 Main office: 100 employees in downtown building
 Development center: 50 employees, 5 km away
 Regional sales offices: 3 locations across the state
