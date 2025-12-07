@@ -181,6 +181,7 @@ Firstly will know, **What is Network Addresses?** -- A network address is like a
          It uses letters and numbers.
 
 **How MAC & IP Addresses Work Together**
+
 ARP is basically the way a computer figures out “I know the IP, but what is the MAC address?”
 It helps one device talk to another on the same network.
 
