@@ -343,7 +343,7 @@ Because BGP selects routes based on policies rather than real-time performance, 
 
 A full mesh of iBGP peers doesn’t scale well as networks grow, so hierarchical designs are used to make management easier. Route reflectors allow some routers to act as central points for iBGP updates, removing the need for every router to connect to every other one. Another solution is to use confederations, which break a large AS into smaller internal ASes to improve organization and scalability. These designs help large ISPs and enterprises manage BGP more efficiently.
 
-<img width="1244" height="608" alt="image" src="https://github.com/user-attachments/assets/3173b586-4a42-4882-8eb1-8159e1336502" />
+<img width="1000" height="550" alt="image" src="https://github.com/user-attachments/assets/3173b586-4a42-4882-8eb1-8159e1336502" />
 
 
 
