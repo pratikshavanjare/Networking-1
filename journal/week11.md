@@ -51,7 +51,7 @@ A VPN, or Virtual Private Network, is basically a secure connection over the int
 
 So, for corporate real world example I am taking second type of VPN that is site to site connection, Here..... I will connect two offices from different cities and will see how VPNs in corporate world help companies connect different offices securely. Like a secure tunnel, it lets them share files, servers, and apps safely without needing expensive physical connections.
 
-   <img width="502" height="550" alt="Screenshot 2025-12-06 160301" src="https://github.com/user-attachments/assets/bcba80aa-6727-4b5a-a11a-44f1460d72a4" />
+   <img width="700" height="650" alt="Screenshot 2025-12-06 160301" src="https://github.com/user-attachments/assets/bcba80aa-6727-4b5a-a11a-44f1460d72a4" />
 
 <br>
 
@@ -120,7 +120,7 @@ Think of it like this: You want to send a letter (your original data), so you pu
 
   - Use Case: Secure remote access or forwarding specific ports.
 
-    <img width="500" height="450" alt="image" src="https://github.com/user-attachments/assets/ea760a71-db54-4050-99a9-f010f113aef8" />
+    <img width="700" height="650" alt="image" src="https://github.com/user-attachments/assets/ea760a71-db54-4050-99a9-f010f113aef8" />
 
 
 
