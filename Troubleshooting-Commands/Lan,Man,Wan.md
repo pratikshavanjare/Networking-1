@@ -1,4 +1,4 @@
-**1. LAN (Local Area Network)**
+# 1. LAN (Local Area Network)
 
 A LAN is basically a network in a small area—like your home, office, or a single building. Devices on a LAN can talk to each other easily, share files, printers, or even an internet connection.
 
@@ -14,7 +14,7 @@ Think of a LAN like all the computers and phones in your house talking to each o
 
 -----------------------------------------
 
-**2. MAN (Metropolitan Area Network)**
+## 2. MAN (Metropolitan Area Network)
 
 A MAN is bigger than a LAN. It usually covers a city or a big campus. A MAN connects multiple LANs together so that they can communicate over a larger area.
 ```
@@ -26,7 +26,7 @@ Think of it like several office buildings in a city connected with high-speed ca
 
 -----------------------------------
 
-**3. WAN (Wide Area Network)**
+## 3. WAN (Wide Area Network)
 
 A WAN is the largest kind of network. It can cover countries or even the whole world. The internet itself is the biggest example of a WAN.
 ```
