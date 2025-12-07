@@ -5,7 +5,8 @@
 Dividing a large block of networks into smaller parts. and we are doing subneeting to reduce the ip add wastage. 
 Let's take an example, There are two computers with ip address 1.1.1.1 & 1.2.1.1 respectively. They can communicate because , In class C first bits should be same. So, it will communicate but if IPs will be different like 1.1.1.1 want to communicate 7.2.1.1 it will can't. So,for that it will need reouter for communicating different networks.
 
-Let's do simple question step by step---
+**Let's do simple question step by step---**
+
 Ware taking example of class C. Subnetting will complete in 6 steps...
 Suppose, we want to connect 100 PCs via 4 switches . so, there will be 100ips will be used and rest of 156 ips will be waste. so, thatit will reduce the wastage of ip address. 
 
@@ -97,7 +98,7 @@ We lose 2 IPs each time — one for **Network** and one for **Broadcast**.
 | Hosts per Subnet | 2ʰ - 2 | h = bits left for host |
 | Subnet Increment | 256 - last octet value | 256 - 192 = 64 |
 
-<img width="1880" height="682" alt="Screenshot 2025-12-06 205631" src="https://github.com/user-attachments/assets/59208540-547e-4fae-9e5f-90bfd170d0c8" />
+   <img width="900" height="500" alt="Screenshot 2025-12-06 205631" src="https://github.com/user-attachments/assets/59208540-547e-4fae-9e5f-90bfd170d0c8" />
 
 
 ---
