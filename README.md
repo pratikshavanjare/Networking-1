@@ -1,5 +1,5 @@
 # Networking-1
-Documentation of my Netwokring Internship covering key concepts, hand-on labs, and troubleshooting practices.
+Documentation of my Netwokring Training covering key concepts, hands-on labs, and troubleshooting practices.
 
 This repository documents my **Networking Internship** experience, where I learned and practiced essential computer networking concepts through daily notes, lab exercises, and troubleshooting activities.
 
