@@ -71,7 +71,7 @@ VLAN 30          	Finance Department
 
 Devices in VLAN 10 cannot directly talk to devices in VLAN 20 without routing.
 
-**Benefits of VLANs*:*
+**Benefits of VLANs*:**
 
 - **Improved Security –** Sensitive departments remain isolated.
 
@@ -89,7 +89,7 @@ Devices in VLAN 10 cannot directly talk to devices in VLAN 20 without routing.
 VLAN tagging is the process of adding a small identifier (tag) inside an Ethernet frame.
 This tag tells switches which VLAN the frame belongs to, allowing multiple VLANs to travel over the same physical connection.
 
-   <img width="500" height="450" alt="image" src="https://github.com/user-attachments/assets/98227500-6275-4101-aed8-171feb9e16fb" />
+   <img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/98227500-6275-4101-aed8-171feb9e16fb" />
 
 
 -------------------------------------------------------------
@@ -104,7 +104,7 @@ This tag tells switches which VLAN the frame belongs to, allowing multiple VLANs
 - The trunk link carries both VLANs' traffic between the switches.
 
 
-     <img width="500" height="450" alt="Screenshot 2025-12-06 202008" src="https://github.com/user-attachments/assets/1a7fc8c5-adbf-4b3b-9cfd-52104eb00104" />
+     <img width="600" height="550" alt="Screenshot 2025-12-06 202008" src="https://github.com/user-attachments/assets/1a7fc8c5-adbf-4b3b-9cfd-52104eb00104" />
 
 
 ------------------------------------------------
