@@ -1,6 +1,6 @@
 # VPNs and Tunneling Concepts
 
-**VPN** - 
+## VPN
 
 A VPN, or Virtual Private Network, is basically a secure connection over the internet. It allows safe communication between a device and a network. Companies use VPNs to protect their data and to give secure remote access to employees.
 
@@ -63,7 +63,7 @@ In the end, both offices can share their files, servers, and applications just l
 ------------------------------------------------------------------------------------------
 
 
-**Tunneling**
+## Tunneling
 
 Tunneling is a method of sending data across a network that may not support the original protocol by wrapping the data inside a supported protocol.
 
