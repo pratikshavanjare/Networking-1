@@ -58,8 +58,8 @@ So, for corporate real world example I am taking second type of VPN that is site
 And this are the steps,  firstly-  both offices setup their vpn routers. They enter each other's public ip so the devices know who they need to connect to. 
 Second is after the setup, a secure tunnel formed between two offices. This tunnel is private, even though the connection is happening over the internet
 Third is the vpn protects the tunnel using encryption and it checks that both sides are trusted. This keeps the connection safe
-Now, when one office send data it goes through this protected tunnel, so no one else can see it
-In the end, both offices can share their files, servers, and applications just like they are in the same building
+Now, when one office send data it goes through this protected tunnel, so no one else can see it.
+In the end, both offices can share their files, servers, and applications just like they are in the same building.
 
 ------------------------------------------------------------------------------------------
 
