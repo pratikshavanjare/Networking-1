@@ -95,15 +95,15 @@ like -
 We learnt Types of Networking(LAN, MAN & WAN) in detail -
 
 1. **LAN** :
-   **Fullform** - Local Area Network
-   **Distance** - 1-2km
-   **Geographical Area** - Small area — like a home, school, or office.
-   **High-Speed** - Its speed is very high appx. (100mbps- 10gbps)
-   **Example** - Wi-Fi in our home, computers in a computer lab.
-   **Use** - It is used for connecting computers & devices in one buiding.
-    **Common Technologies** - LAN mostly uses Ethernet cables or Wi-Fi to connect nearby devices.
+   - **Fullform** - Local Area Network
+   - **Distance** - 1-2km
+   - **Geographical Area** - Small area — like a home, school, or office.
+   - **High-Speed** - Its speed is very high appx. (100mbps- 10gbps)
+   - **Example** - Wi-Fi in our home, computers in a computer lab.
+   - **Use** - It is used for connecting computers & devices in one buiding.
+   - **Common Technologies** - LAN mostly uses Ethernet cables or Wi-Fi to connect nearby devices.
 
-      <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/6d16549d-a607-46c0-b0f2-98c8890d4204" />
+       <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/6d16549d-a607-46c0-b0f2-98c8890d4204" />
 
 
 2. **MAN** :
