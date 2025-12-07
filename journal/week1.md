@@ -76,10 +76,14 @@ There are 4 types of topologies -
 
 ### Importance of Networking in IT 
 
-Networkin is most important in the field of IT (Information Technology) because it helps devices & people connect, share, and communicate easily. like -
-    - **Resource Sharing** - Users can share files, printers, and internet without needing separate devices for everyone.
-    - **Data Security** - It helps in protecting & monitoring data safely using firewalls and servers.
-    - **Cloud Computing** - Networking gives access to the internet & cloud services like Google Drive, AWS or Azure.
+Networking is most important in the field of IT (Information Technology) because it helps devices & people connect, share, and communicate easily.
+like -
+   
+   - **Resource Sharing** - Users can share files, printers, and internet without needing separate devices for everyone.
+  
+   - **Data Security** - It helps in protecting & monitoring data safely using firewalls and servers.
+  
+   - **Cloud Computing** - Networking gives access to the internet & cloud services like Google Drive, AWS or Azure.
 
 
 #### Reference [Day 1](https://claude.ai/public/artifacts/e92959cb-3269-4546-b97d-e5dcd0aee458)
