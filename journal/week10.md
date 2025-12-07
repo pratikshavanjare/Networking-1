@@ -132,7 +132,7 @@ Active Router: Handles all traffic.
 
 6. **Seamless Traffic -** Devices continue using the same virtual IP, ensuring uninterrupted network access.
 
-<img width="700" height="550" alt="image" src="https://github.com/user-attachments/assets/6db44d8a-839b-4871-96fd-e76662d275b5" />
+     <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/6db44d8a-839b-4871-96fd-e76662d275b5" />
 
 ---------------------------------------
 
@@ -181,7 +181,7 @@ If R1 fails, R2 instantly takes over, and employees continue working without not
 
 5. **Seamless Network:** Devices continue using the same virtual IP, so network access remains uninterrupted.
 
-<img width="600" height="600" alt="Screenshot 2025-12-07 095950" src="https://github.com/user-attachments/assets/93fc6c37-edcc-488a-85f5-360421f51955" />
+     <img width="450" height="450" alt="Screenshot 2025-12-07 095950" src="https://github.com/user-attachments/assets/93fc6c37-edcc-488a-85f5-360421f51955" />
 
 ---------------------------------------------------------------------------
 
